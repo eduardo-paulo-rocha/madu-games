@@ -4,7 +4,7 @@ import { colors, spacing, typography, radii } from '../../../design-system/token
 interface ClueListProps {
     clues: PlacedClue[];
     activeClue: PlacedClue | null;
-    completedWords: Map<string, { colorIndex: number; completedOrder: number }>;
+    completedWords: Map<string, { completedOrder: number }>;
     onClueClick: (clue: PlacedClue) => void;
 }
 

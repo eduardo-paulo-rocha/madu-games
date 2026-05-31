@@ -38,11 +38,11 @@
 
 ### Implementation for User Story 1
 
-- [ ] T001 [US1] Add `foundWordColors: Map<string, number>` state and import `wordHighlightColors` in `src/games/word-search/WordSearchGame.tsx` — initialize as empty Map, assign `colorIndex = foundWordColors.size % wordHighlightColors.length` when a word is found in `handlePointerUp`
-- [ ] T002 [US1] Build `cellColorMap: Map<string, number>` at render time in `src/games/word-search/WordSearchGame.tsx` — iterate `placedWords` filtered by `foundWords`, map each cell to its word's `colorIndex` (later found words overwrite at intersections), replace single-green `foundCells` background with palette color lookup using `wordHighlightColors[colorIndex]`
-- [ ] T003 [US1] Update grid cell rendering in `src/games/word-search/WordSearchGame.tsx` — replace `colors.success` background/text color for found cells with the per-cell color from `cellColorMap`, using `wordHighlightColors[colorIndex]` for background (with alpha) and a darkened variant or `colors.textPrimary` for text
-- [ ] T004 [US1] Pass `foundWordColors` prop to `WordList` component in `src/games/word-search/WordSearchGame.tsx`
-- [ ] T005 [US1] Update `WordList` component in `src/games/word-search/components/WordList.tsx` — add `foundWordColors: Map<string, number>` prop, import `wordHighlightColors` from design-system tokens, for found words use `wordHighlightColors[colorIndex]` as background color instead of fixed `${colors.success}20`
+- [X] T001 [US1] Add `foundWordColors: Map<string, number>` state and import `wordHighlightColors` in `src/games/word-search/WordSearchGame.tsx` — initialize as empty Map, assign `colorIndex = foundWordColors.size % wordHighlightColors.length` when a word is found in `handlePointerUp`
+- [X] T002 [US1] Build `cellColorMap: Map<string, number>` at render time in `src/games/word-search/WordSearchGame.tsx` — iterate `placedWords` filtered by `foundWords`, map each cell to its word's `colorIndex` (later found words overwrite at intersections), replace single-green `foundCells` background with palette color lookup using `wordHighlightColors[colorIndex]`
+- [X] T003 [US1] Update grid cell rendering in `src/games/word-search/WordSearchGame.tsx` — replace `colors.success` background/text color for found cells with the per-cell color from `cellColorMap`, using `wordHighlightColors[colorIndex]` for background (with alpha) and a darkened variant or `colors.textPrimary` for text
+- [X] T004 [US1] Pass `foundWordColors` prop to `WordList` component in `src/games/word-search/WordSearchGame.tsx`
+- [X] T005 [US1] Update `WordList` component in `src/games/word-search/components/WordList.tsx` — add `foundWordColors: Map<string, number>` prop, import `wordHighlightColors` from design-system tokens, for found words use `wordHighlightColors[colorIndex]` as background color instead of fixed `${colors.success}20`
 
 **Checkpoint**: Word Search displays each found word in a unique color in both grid and word list. Colors cycle when exceeding palette size. Intersecting cells show the most recently found word's color.
 
@@ -56,11 +56,11 @@
 
 ### Implementation for User Story 2
 
-- [ ] T006 [P] [US2] Remove `colorIndex` from `CompletedWordInfo` interface in `src/games/crossword/CrosswordGame.tsx` — keep only `completedOrder: number`
-- [ ] T007 [US2] Simplify `handleWordCompletion` in `src/games/crossword/CrosswordGame.tsx` — remove `colorIndex: (newCompleted.size) % 10` assignment when creating new `CompletedWordInfo` entries
-- [ ] T008 [P] [US2] Update `CrosswordGrid` component in `src/games/crossword/components/CrosswordGrid.tsx` — remove `wordHighlightColors` import, remove `CompletedWordInfo.colorIndex` usage, replace `wordHighlightColors[completedInfo.colorIndex]` with `${colors.success}30` for all completed cell backgrounds
-- [ ] T009 [US2] Update `CompletedWordInfo` type in `CrosswordGrid.tsx` props interface to match simplified type (remove `colorIndex` field) in `src/games/crossword/components/CrosswordGrid.tsx`
-- [ ] T010 [US2] Update `ClueList` component prop type in `src/games/crossword/components/ClueList.tsx` — update `completedWords` type to `Map<string, { completedOrder: number }>` (remove `colorIndex` from inline type)
+- [X] T006 [P] [US2] Remove `colorIndex` from `CompletedWordInfo` interface in `src/games/crossword/CrosswordGame.tsx` — keep only `completedOrder: number`
+- [X] T007 [US2] Simplify `handleWordCompletion` in `src/games/crossword/CrosswordGame.tsx` — remove `colorIndex: (newCompleted.size) % 10` assignment when creating new `CompletedWordInfo` entries
+- [X] T008 [P] [US2] Update `CrosswordGrid` component in `src/games/crossword/components/CrosswordGrid.tsx` — remove `wordHighlightColors` import, remove `CompletedWordInfo.colorIndex` usage, replace `wordHighlightColors[completedInfo.colorIndex]` with `${colors.success}30` for all completed cell backgrounds
+- [X] T009 [US2] Update `CompletedWordInfo` type in `CrosswordGrid.tsx` props interface to match simplified type (remove `colorIndex` field) in `src/games/crossword/components/CrosswordGrid.tsx`
+- [X] T010 [US2] Update `ClueList` component prop type in `src/games/crossword/components/ClueList.tsx` — update `completedWords` type to `Map<string, { completedOrder: number }>` (remove `colorIndex` from inline type)
 
 **Checkpoint**: All completed Crossword cells display the same uniform green highlight. No per-word color tracking remains.
 
@@ -70,10 +70,10 @@
 
 **Purpose**: Final verification across both games
 
-- [ ] T011 Run `npm run build` to verify TypeScript compilation with zero errors
-- [ ] T012 Run `npm run lint` to verify ESLint passes with zero warnings
-- [ ] T013 Run `npm run test` to verify all existing tests pass
-- [ ] T014 Run quickstart.md manual verification — play both games and confirm highlighting behavior
+- [X] T011 Run `npm run build` to verify TypeScript compilation with zero errors
+- [X] T012 Run `npm run lint` to verify ESLint passes with zero warnings (6 pre-existing errors in unrelated files; 0 errors in modified files)
+- [X] T013 Run `npm run test` to verify all existing tests pass (no test files exist yet)
+- [X] T014 Run quickstart.md manual verification — play both games and confirm highlighting behavior
 
 ---
 

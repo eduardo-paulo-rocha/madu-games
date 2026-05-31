@@ -26,7 +26,6 @@ interface FilledCell {
 }
 
 interface CompletedWordInfo {
-    colorIndex: number;
     completedOrder: number;
 }
 
@@ -125,7 +124,6 @@ export default function CrosswordGame({
                 if (checkWordCompletion(clue, newLetters)) {
                     counter++;
                     newCompleted.set(clue.normalizedWord, {
-                        colorIndex: (newCompleted.size) % 10,
                         completedOrder: counter,
                     });
                     anyNewCompletion = true;

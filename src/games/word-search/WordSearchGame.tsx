@@ -6,7 +6,7 @@ import { useHint } from '../../core/hooks/use-hint';
 import { WordList } from './components/WordList';
 import { HintButton } from '../../design-system/components/HintButton';
 import { HintPenaltyToast } from '../../design-system/components/HintPenaltyToast';
-import { colors, spacing, typography, radii } from '../../design-system/tokens';
+import { colors, spacing, typography, radii, wordHighlightColors } from '../../design-system/tokens';
 import wordsEasy from './data/words-easy.json';
 import wordsMedium from './data/words-medium.json';
 import wordsHard from './data/words-hard.json';
@@ -35,6 +35,7 @@ export default function WordSearchGame({
     const [selectedCells, setSelectedCells] = useState<CellCoord[]>([]);
     const [isSelecting, setIsSelecting] = useState(false);
     const [foundCells, setFoundCells] = useState<Set<string>>(new Set());
+    const [foundWordColors, setFoundWordColors] = useState<Map<string, number>>(new Map());
     const [hintedWordCells, setHintedWordCells] = useState<Map<string, CellCoord>>(new Map());
     const gridRef = useRef<HTMLDivElement>(null);
     const startCellRef = useRef<CellCoord | null>(null);
@@ -161,6 +162,11 @@ export default function WordSearchGame({
             const newFound = new Set(foundWords);
             newFound.add(match.normalizedWord);
             setFoundWords(newFound);
+            setFoundWordColors((prev) => {
+                const next = new Map(prev);
+                next.set(match.normalizedWord, prev.size % wordHighlightColors.length);
+                return next;
+            });
             setFoundCells((prev) => {
                 const next = new Set(prev);
                 match.cells.forEach((c) => next.add(cellKey(c.row, c.col)));
@@ -192,6 +198,17 @@ export default function WordSearchGame({
     const hintedCellSet = new Set(
         Array.from(hintedWordCells.values()).map((c) => cellKey(c.row, c.col)),
     );
+
+    // Build cell-to-color map: iterate placed words in order, found words overwrite at intersections
+    const cellColorMap = new Map<string, number>();
+    for (const pw of placedWords) {
+        const colorIdx = foundWordColors.get(pw.normalizedWord);
+        if (colorIdx === undefined) continue;
+        for (const cell of pw.cells) {
+            cellColorMap.set(cellKey(cell.row, cell.col), colorIdx);
+        }
+    }
+
     const cellSizePx = Math.min(40, Math.floor(320 / gridSize));
 
     return (
@@ -218,6 +235,7 @@ export default function WordSearchGame({
                     normalizedWord: w.normalizedWord,
                 }))}
                 foundWords={foundWords}
+                foundWordColors={foundWordColors}
             />
 
             <div
@@ -240,6 +258,8 @@ export default function WordSearchGame({
                         const isSelected = selectedSet.has(key);
                         const isFoundCell = foundCells.has(key);
                         const isHintedCell = hintedCellSet.has(key);
+                        const foundColorIdx = cellColorMap.get(key);
+                        const foundColor = foundColorIdx !== undefined ? wordHighlightColors[foundColorIdx] : undefined;
 
                         return (
                             <div
@@ -250,8 +270,8 @@ export default function WordSearchGame({
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
-                                    backgroundColor: isFoundCell
-                                        ? `${colors.success}30`
+                                    backgroundColor: isFoundCell && foundColor
+                                        ? foundColor
                                         : isSelected
                                             ? `${colors.primary}30`
                                             : isHintedCell
@@ -261,7 +281,7 @@ export default function WordSearchGame({
                                     fontSize: Math.max(12, cellSizePx * 0.5),
                                     fontWeight: typography.fontWeight.bold,
                                     color: isFoundCell
-                                        ? colors.success
+                                        ? colors.textPrimary
                                         : isSelected
                                             ? colors.primary
                                             : colors.textPrimary,

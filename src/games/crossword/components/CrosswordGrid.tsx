@@ -1,5 +1,4 @@
 import { colors, typography } from '../../../design-system/tokens';
-import { wordHighlightColors } from '../../../design-system/tokens';
 import type { PlacedClue } from '../logic/puzzle-generator';
 
 interface FilledCell {
@@ -8,7 +7,6 @@ interface FilledCell {
 }
 
 interface CompletedWordInfo {
-    colorIndex: number;
     completedOrder: number;
 }
 
@@ -118,7 +116,7 @@ export function CrosswordGrid({
                     if (isSelected) {
                         bgColor = `${colors.primary}40`;
                     } else if (completedInfo) {
-                        bgColor = wordHighlightColors[completedInfo.colorIndex] ?? colors.surface;
+                        bgColor = `${colors.success}30`;
                     } else if (isActive) {
                         bgColor = `${colors.primary}15`;
                     }
