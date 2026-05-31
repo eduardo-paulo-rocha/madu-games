@@ -18,7 +18,7 @@
 
 **Purpose**: Create the game module directory structure and shared types
 
-- [ ] T001 Create game module directory structure: `src/games/logical-sequence/`, `src/games/logical-sequence/components/`, `src/games/logical-sequence/logic/`
+- [x] T001 Create game module directory structure: `src/games/logical-sequence/`, `src/games/logical-sequence/components/`, `src/games/logical-sequence/logic/`
 
 ---
 
@@ -28,9 +28,9 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T002 Define PatternRule type, PatternInstance type, EmojiSet type, and DifficultyConfig type in `src/games/logical-sequence/logic/pattern-rules.ts` — include the curated emoji sets (colors/shapes, animals, fruits, nature, objects) and pattern rule definitions for all pattern types (alternation, cycle, growth, nested) per data-model.md and research.md R1/R2
-- [ ] T003 Implement `generatePattern` function in `src/games/logical-sequence/logic/pattern-generator.ts` — takes a PatternRule + emoji array + sequence length + options count, returns a PatternInstance with the correct answer at `rule(lastIndex)`, same-category distractors, and randomized option positions per research.md R1/R4
-- [ ] T004 Implement `generateRound` function in `src/games/logical-sequence/logic/round-generator.ts` — takes difficulty and roundSize (default 10), selects pattern rules for the difficulty level, randomly pairs with emoji sets, returns `PatternInstance[]` per research.md R3/R5. Map difficulty to config: easy = AB alternation, 4-5 visible, 2 options; medium = ABC cycle + growth, 5-6 visible, 3 options; hard = nested + growth + longer cycles, 6-8 visible, 3 options
+- [x] T002 Define PatternRule type, PatternInstance type, EmojiSet type, and DifficultyConfig type in `src/games/logical-sequence/logic/pattern-rules.ts` — include the curated emoji sets (colors/shapes, animals, fruits, nature, objects) and pattern rule definitions for all pattern types (alternation, cycle, growth, nested) per data-model.md and research.md R1/R2
+- [x] T003 Implement `generatePattern` function in `src/games/logical-sequence/logic/pattern-generator.ts` — takes a PatternRule + emoji array + sequence length + options count, returns a PatternInstance with the correct answer at `rule(lastIndex)`, same-category distractors, and randomized option positions per research.md R1/R4
+- [x] T004 Implement `generateRound` function in `src/games/logical-sequence/logic/round-generator.ts` — takes difficulty and roundSize (default 10), selects pattern rules for the difficulty level, randomly pairs with emoji sets, returns `PatternInstance[]` per research.md R3/R5. Map difficulty to config: easy = AB alternation, 4-5 visible, 2 options; medium = ABC cycle + growth, 5-6 visible, 3 options; hard = nested + growth + longer cycles, 6-8 visible, 3 options
 
 **Checkpoint**: Pattern engine ready — all pattern generation is functional and deterministic
 
@@ -44,10 +44,10 @@
 
 ### Implementation for User Story 1
 
-- [ ] T005 [P] [US1] Create PatternDisplay component in `src/games/logical-sequence/components/PatternDisplay.tsx` — renders a horizontal row of emoji characters from `PatternInstance.sequence` with the last position showing ❓ (or the correct answer after selection). Use design system tokens for spacing, typography (xxxl emoji size), and `scaleIn` animation preset for each emoji. Must support replacing ❓ with the correct answer on correct selection.
-- [ ] T006 [P] [US1] Create OptionButtons component in `src/games/logical-sequence/components/OptionButtons.tsx` — renders 2-3 tappable emoji buttons from `PatternInstance.options`. Each button uses design system Button-like styling with `tokens.radii.lg`, min touch target 44px. On tap, calls `onSelect(emoji)`. After selection, highlight correct option in `colors.success` and incorrect in `colors.error`. Disable all buttons after selection.
-- [ ] T007 [P] [US1] Create FeedbackOverlay component in `src/games/logical-sequence/components/FeedbackOverlay.tsx` — shows ✅🎉 (correct) or ❌ (incorrect) centered overlay with `celebrate` animation preset. Auto-dismisses after 1.5s (correct) or 2.5s (incorrect, with correct answer highlighted). Uses Framer Motion `AnimatePresence` for enter/exit.
-- [ ] T008 [US1] Implement LogicalSequenceGame component in `src/games/logical-sequence/LogicalSequenceGame.tsx` — implements `GameProps` interface. State: `patterns: PatternInstance[]`, `currentIndex: number`, `correctCount: number`, `selectedOption: string | null`, `showFeedback: boolean`. On mount: call `generateRound(difficulty, roundSize)`. On option select: check if correct, show FeedbackOverlay, call `onCorrectItem()` if correct, auto-advance after feedback delay. When `currentIndex >= roundSize`: call `onRoundComplete({ totalItems: roundSize, correctItems: correctCount })`.
+- [x] T005 [P] [US1] Create PatternDisplay component in `src/games/logical-sequence/components/PatternDisplay.tsx` — renders a horizontal row of emoji characters from `PatternInstance.sequence` with the last position showing ❓ (or the correct answer after selection). Use design system tokens for spacing, typography (xxxl emoji size), and `scaleIn` animation preset for each emoji. Must support replacing ❓ with the correct answer on correct selection.
+- [x] T006 [P] [US1] Create OptionButtons component in `src/games/logical-sequence/components/OptionButtons.tsx` — renders 2-3 tappable emoji buttons from `PatternInstance.options`. Each button uses design system Button-like styling with `tokens.radii.lg`, min touch target 44px. On tap, calls `onSelect(emoji)`. After selection, highlight correct option in `colors.success` and incorrect in `colors.error`. Disable all buttons after selection.
+- [x] T007 [P] [US1] Create FeedbackOverlay component in `src/games/logical-sequence/components/FeedbackOverlay.tsx` — shows ✅🎉 (correct) or ❌ (incorrect) centered overlay with `celebrate` animation preset. Auto-dismisses after 1.5s (correct) or 2.5s (incorrect, with correct answer highlighted). Uses Framer Motion `AnimatePresence` for enter/exit.
+- [x] T008 [US1] Implement LogicalSequenceGame component in `src/games/logical-sequence/LogicalSequenceGame.tsx` — implements `GameProps` interface. State: `patterns: PatternInstance[]`, `currentIndex: number`, `correctCount: number`, `selectedOption: string | null`, `showFeedback: boolean`. On mount: call `generateRound(difficulty, roundSize)`. On option select: check if correct, show FeedbackOverlay, call `onCorrectItem()` if correct, auto-advance after feedback delay. When `currentIndex >= roundSize`: call `onRoundComplete({ totalItems: roundSize, correctItems: correctCount })`.
 
 **Checkpoint**: Core gameplay loop works — player can play through 10 patterns with feedback. US2 (scoring/results) is automatically handled by GameShell when `onRoundComplete` is called.
 
@@ -61,7 +61,7 @@
 
 ### Implementation for User Story 2
 
-- [ ] T009 [US2] Verify and wire round completion in `src/games/logical-sequence/LogicalSequenceGame.tsx` — ensure `onRoundComplete()` is called with accurate `{ totalItems, correctItems }` matching the `RoundResults` interface from `src/core/registry/types.ts`. GameShell handles the results screen (ScoreDisplay, StarRating, CelebrationAnimation, NewRecordAnimation) and score persistence automatically. No additional implementation needed beyond correct callback invocation. Verify by reviewing that correctCount increments only on correct answers and totalItems equals roundSize.
+- [x] T009 [US2] Verify and wire round completion in `src/games/logical-sequence/LogicalSequenceGame.tsx` — ensure `onRoundComplete()` is called with accurate `{ totalItems, correctItems }` matching the `RoundResults` interface from `src/core/registry/types.ts`. GameShell handles the results screen (ScoreDisplay, StarRating, CelebrationAnimation, NewRecordAnimation) and score persistence automatically. No additional implementation needed beyond correct callback invocation. Verify by reviewing that correctCount increments only on correct answers and totalItems equals roundSize.
 
 **Checkpoint**: Full game flow with scoring works — GameShell displays results, persists scores to IndexedDB
 
@@ -75,9 +75,9 @@
 
 ### Implementation for User Story 4
 
-- [ ] T010 [P] [US4] Create LogicalSequenceIcon component in `src/games/logical-sequence/components/LogicalSequenceIcon.tsx` — renders a representative icon for the game card (e.g., 🔴🔵🔴🔵❓ or a pattern-themed SVG). Accepts `size?: number` prop. Style with design system tokens.
-- [ ] T011 [P] [US4] Create plugin definition in `src/games/logical-sequence/index.ts` — export `plugin: GamePlugin` with: `id: 'logical-sequence'`, `name: 'Sequência Lógica'`, `description: 'Descubra o padrão e complete a sequência!'`, `icon: LogicalSequenceIcon`, `component: lazy(() => import('./LogicalSequenceGame'))`, `defaultRoundSize: 10`, `difficulties: ['easy', 'medium', 'hard']`, `pointsPerItem: 10`
-- [ ] T012 [US4] Register game plugin in `src/games/index.ts` — add `import { plugin as logicalSequence } from './logical-sequence'` and `gameRegistry.register(logicalSequence)`
+- [x] T010 [P] [US4] Create LogicalSequenceIcon component in `src/games/logical-sequence/components/LogicalSequenceIcon.tsx` — renders a representative icon for the game card (e.g., 🔴🔵🔴🔵❓ or a pattern-themed SVG). Accepts `size?: number` prop. Style with design system tokens.
+- [x] T011 [P] [US4] Create plugin definition in `src/games/logical-sequence/index.ts` — export `plugin: GamePlugin` with: `id: 'logical-sequence'`, `name: 'Sequência Lógica'`, `description: 'Descubra o padrão e complete a sequência!'`, `icon: LogicalSequenceIcon`, `component: lazy(() => import('./LogicalSequenceGame'))`, `defaultRoundSize: 10`, `difficulties: ['easy', 'medium', 'hard']`, `pointsPerItem: 10`
+- [x] T012 [US4] Register game plugin in `src/games/index.ts` — add `import { plugin as logicalSequence } from './logical-sequence'` and `gameRegistry.register(logicalSequence)`
 
 **Checkpoint**: Game is visible on home page, launches into difficulty selection, and full play flow works
 
@@ -91,7 +91,7 @@
 
 ### Implementation for User Story 3
 
-- [ ] T013 [US3] Validate and refine difficulty-specific pattern rules in `src/games/logical-sequence/logic/pattern-rules.ts` — ensure each difficulty maps to the correct pattern types per FR-006: easy = two-element alternation (AB-AB) with 4-5 visible elements and 2 options; medium = three-element cycles (ABC-ABC) or simple growth with 5-6 visible and 3 options; hard = nested patterns, multi-attribute, or growth with 6-8 visible and 3 options. Verify at least 20 distinct pattern variations per difficulty (SC-006) by combining generators × emoji sets. Add any missing pattern generators (e.g., nested cycle generator for hard difficulty that combines two independent cycles).
+- [x] T013 [US3] Validate and refine difficulty-specific pattern rules in `src/games/logical-sequence/logic/pattern-rules.ts` — ensure each difficulty maps to the correct pattern types per FR-006: easy = two-element alternation (AB-AB) with 4-5 visible elements and 2 options; medium = three-element cycles (ABC-ABC) or simple growth with 5-6 visible and 3 options; hard = nested patterns, multi-attribute, or growth with 6-8 visible and 3 options. Verify at least 20 distinct pattern variations per difficulty (SC-006) by combining generators × emoji sets. Add any missing pattern generators (e.g., nested cycle generator for hard difficulty that combines two independent cycles).
 
 **Checkpoint**: All three difficulty levels produce appropriately complex patterns with sufficient variety
 
@@ -101,9 +101,9 @@
 
 **Purpose**: Final validation and refinements across all stories
 
-- [ ] T014 [P] Run `npm run lint` and fix any lint errors in all new files under `src/games/logical-sequence/`
-- [ ] T015 [P] Run `npm run build` and verify zero TypeScript compilation errors
-- [ ] T016 Verify full game flow end-to-end: home page → game card → difficulty selection → play 10 patterns → results screen → play again. Test all three difficulties. Confirm feedback timing (< 500ms per SC-002), emoji rendering, and touch targets (≥ 44px).
+- [x] T014 [P] Run `npm run lint` and fix any lint errors in all new files under `src/games/logical-sequence/`
+- [x] T015 [P] Run `npm run build` and verify zero TypeScript compilation errors
+- [x] T016 Verify full game flow end-to-end: home page → game card → difficulty selection → play 10 patterns → results screen → play again. Test all three difficulties. Confirm feedback timing (< 500ms per SC-002), emoji rendering, and touch targets (≥ 44px).
 
 ---
 
