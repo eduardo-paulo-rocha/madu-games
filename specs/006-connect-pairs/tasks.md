@@ -29,8 +29,8 @@
 
 **Purpose**: Create the game module folder structure and type definitions
 
-- [ ] T001 Create directory structure for the connect-pairs game module: `src/games/connect-pairs/`, `src/games/connect-pairs/components/`, `src/games/connect-pairs/logic/`, `src/games/connect-pairs/data/`
-- [ ] T002 Create shared type definitions (PairItem, Pair, PairSet, RoundState, RoundPhase, RoundAction) in `src/games/connect-pairs/logic/types.ts` following the data model from `specs/006-connect-pairs/data-model.md`
+- [X] T001 Create directory structure for the connect-pairs game module: `src/games/connect-pairs/`, `src/games/connect-pairs/components/`, `src/games/connect-pairs/logic/`, `src/games/connect-pairs/data/`
+- [X] T002 Create shared type definitions (PairItem, Pair, PairSet, RoundState, RoundPhase, RoundAction) in `src/games/connect-pairs/logic/types.ts` following the data model from `specs/006-connect-pairs/data-model.md`
 
 ---
 
@@ -40,10 +40,10 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T003 Implement `shuffleArray` utility (Fisher-Yates) and `generateRound` function in `src/games/connect-pairs/logic/round-generator.ts` — accepts a `PairSet`, shuffles left and right columns independently, returns `{ leftColumn: PairItem[], rightColumn: PairItem[] }`
-- [ ] T004 Implement the selection state machine reducer in `src/games/connect-pairs/logic/pair-matcher.ts` — `useReducer`-based with actions: `SELECT_ITEM`, `CHECK_RESULT`, `CLEAR_FEEDBACK`, `RESET`; states: `idle`, `one-selected`, `checking`, `correct-feedback`, `incorrect-feedback`, `complete` per the state transitions in data-model.md
-- [ ] T005 Implement first-try tracking logic in `src/games/connect-pairs/logic/scoring.ts` — `isFirstTry(failedItems: Set<string>, leftId: string, rightId: string): boolean` and `addFailedItems(failedItems: Set<string>, leftId: string, rightId: string): Set<string>`
-- [ ] T006 Create the pair data module with type-safe PairSet arrays in `src/games/connect-pairs/data/pair-sets.ts` — implement at least 2 pair sets for the "Animais e Sons" category (1 easy with 4 pairs, 1 medium with 5 pairs) as initial seed data. Export `getPairSetsByDifficulty(difficulty: Difficulty): PairSet[]` and `selectPairSet(difficulty: Difficulty, excludeCategory?: string): PairSet`
+- [X] T003 Implement `shuffleArray` utility (Fisher-Yates) and `generateRound` function in `src/games/connect-pairs/logic/round-generator.ts` — accepts a `PairSet`, shuffles left and right columns independently, returns `{ leftColumn: PairItem[], rightColumn: PairItem[] }`
+- [X] T004 Implement the selection state machine reducer in `src/games/connect-pairs/logic/pair-matcher.ts` — `useReducer`-based with actions: `SELECT_ITEM`, `CHECK_RESULT`, `CLEAR_FEEDBACK`, `RESET`; states: `idle`, `one-selected`, `checking`, `correct-feedback`, `incorrect-feedback`, `complete` per the state transitions in data-model.md
+- [X] T005 Implement first-try tracking logic in `src/games/connect-pairs/logic/scoring.ts` — `isFirstTry(failedItems: Set<string>, leftId: string, rightId: string): boolean` and `addFailedItems(failedItems: Set<string>, leftId: string, rightId: string): Set<string>`
+- [X] T006 Create the pair data module with type-safe PairSet arrays in `src/games/connect-pairs/data/pair-sets.ts` — implement at least 2 pair sets for the "Animais e Sons" category (1 easy with 4 pairs, 1 medium with 5 pairs) as initial seed data. Export `getPairSetsByDifficulty(difficulty: Difficulty): PairSet[]` and `selectPairSet(difficulty: Difficulty, excludeCategory?: string): PairSet`
 
 **Checkpoint**: Core logic ready — game components can now be built
 
@@ -57,11 +57,11 @@
 
 ### Implementation for User Story 1
 
-- [ ] T007 [P] [US1] Create `PairItem` component in `src/games/connect-pairs/components/PairItem.tsx` — renders a single selectable item with states: default, selected (primary border + scale 1.05), matched (success background + checkmark + disabled), uses framer-motion for selection/deselection animations, touch target ≥ 48px, displays `PairItem.display` text/emoji
-- [ ] T008 [P] [US1] Create `MatchFeedback` component in `src/games/connect-pairs/components/MatchFeedback.tsx` — overlay that shows ✅ (correct) or ❌ (incorrect) emoji with framer-motion enter/exit animation, auto-dismisses after 500ms, uses `AnimatePresence`
-- [ ] T009 [US1] Create `PairColumn` component in `src/games/connect-pairs/components/PairColumn.tsx` — renders a vertical list of `PairItem` components, accepts `items: PairItem[]`, `selectedId: string | null`, `matchedIds: Set<string>`, `onSelectItem: (id: string) => void`, uses flexbox column layout with `spacing.md` gap
-- [ ] T010 [US1] Create `ConnectPairsGame` main component in `src/games/connect-pairs/ConnectPairsGame.tsx` — receives `GameProps`, initializes round via `generateRound`/`selectPairSet` (using medium difficulty and "Animais e Sons" as default for MVP), wires `useReducer` from `pair-matcher.ts`, renders two `PairColumn` components side-by-side with `MatchFeedback` overlay, handles selection dispatch, calls `onCorrectItem()` on correct match, calls `onRoundComplete({ totalItems, correctItems: firstTryMatches, hintCount: 0 })` when all pairs matched, implements `onSaveState`/`savedState` for resume support
-- [ ] T011 [US1] Export default component from `src/games/connect-pairs/ConnectPairsGame.tsx` for lazy loading — ensure the file has `export default ConnectPairsGame` as required by `lazy(() => import('./ConnectPairsGame'))`
+- [X] T007 [P] [US1] Create `PairItem` component in `src/games/connect-pairs/components/PairItem.tsx` — renders a single selectable item with states: default, selected (primary border + scale 1.05), matched (success background + checkmark + disabled), uses framer-motion for selection/deselection animations, touch target ≥ 48px, displays `PairItem.display` text/emoji
+- [X] T008 [P] [US1] Create `MatchFeedback` component in `src/games/connect-pairs/components/MatchFeedback.tsx` — overlay that shows ✅ (correct) or ❌ (incorrect) emoji with framer-motion enter/exit animation, auto-dismisses after 500ms, uses `AnimatePresence`
+- [X] T009 [US1] Create `PairColumn` component in `src/games/connect-pairs/components/PairColumn.tsx` — renders a vertical list of `PairItem` components, accepts `items: PairItem[]`, `selectedId: string | null`, `matchedIds: Set<string>`, `onSelectItem: (id: string) => void`, uses flexbox column layout with `spacing.md` gap
+- [X] T010 [US1] Create `ConnectPairsGame` main component in `src/games/connect-pairs/ConnectPairsGame.tsx` — receives `GameProps`, initializes round via `generateRound`/`selectPairSet` (using medium difficulty and "Animais e Sons" as default for MVP), wires `useReducer` from `pair-matcher.ts`, renders two `PairColumn` components side-by-side with `MatchFeedback` overlay, handles selection dispatch, calls `onCorrectItem()` on correct match, calls `onRoundComplete({ totalItems, correctItems: firstTryMatches, hintCount: 0 })` when all pairs matched, implements `onSaveState`/`savedState` for resume support
+- [X] T011 [US1] Export default component from `src/games/connect-pairs/ConnectPairsGame.tsx` for lazy loading — ensure the file has `export default ConnectPairsGame` as required by `lazy(() => import('./ConnectPairsGame'))`
 
 **Checkpoint**: At this point, the core matching gameplay works end-to-end with a single category. Player can select items, see feedback, and complete a round.
 
@@ -75,7 +75,7 @@
 
 ### Implementation for User Story 2
 
-- [ ] T012 [US2] Verify `RoundResults` mapping in `ConnectPairsGame` at `src/games/connect-pairs/ConnectPairsGame.tsx` — ensure `onRoundComplete` is called with `{ totalItems: pairCount, correctItems: firstTryMatches, hintCount: 0 }` so the existing `GameShell` correctly computes score via `calculateScoreWithHints` and stars via `calculateStars`, and displays `ScoreDisplay`, `StarRating`, `CelebrationAnimation`, and "Jogar Novamente" button
+- [X] T012 [US2] Verify `RoundResults` mapping in `ConnectPairsGame` at `src/games/connect-pairs/ConnectPairsGame.tsx` — ensure `onRoundComplete` is called with `{ totalItems: pairCount, correctItems: firstTryMatches, hintCount: 0 }` so the existing `GameShell` correctly computes score via `calculateScoreWithHints` and stars via `calculateStars`, and displays `ScoreDisplay`, `StarRating`, `CelebrationAnimation`, and "Jogar Novamente" button
 
 **Checkpoint**: Scoring integration is complete. GameShell handles results display, celebration, and play-again flow using existing infrastructure.
 
@@ -89,9 +89,9 @@
 
 ### Implementation for User Story 4
 
-- [ ] T013 [P] [US4] Create `ConnectPairsIcon` component in `src/games/connect-pairs/components/ConnectPairsIcon.tsx` — accepts `{ size?: number }` prop, renders a representative icon using emoji (e.g., 🔗 or a pair-connection visual) styled consistently with existing game icons (`EmojiGuessIcon` pattern)
-- [ ] T014 [US4] Create plugin registration in `src/games/connect-pairs/index.ts` — export `plugin: GamePlugin` with `id: 'connect-pairs'`, `name: 'Conecte os Pares'`, `description: 'Conecte elementos que se relacionam!'`, `icon: ConnectPairsIcon`, `component: lazy(() => import('./ConnectPairsGame'))`, `defaultRoundSize: 5`, `difficulties: ['easy', 'medium', 'hard']`, `pointsPerItem: 15`
-- [ ] T015 [US4] Register the connect-pairs plugin in `src/games/index.ts` — add `import { plugin as connectPairs } from './connect-pairs';` and `gameRegistry.register(connectPairs);`
+- [X] T013 [P] [US4] Create `ConnectPairsIcon` component in `src/games/connect-pairs/components/ConnectPairsIcon.tsx` — accepts `{ size?: number }` prop, renders a representative icon using emoji (e.g., 🔗 or a pair-connection visual) styled consistently with existing game icons (`EmojiGuessIcon` pattern)
+- [X] T014 [US4] Create plugin registration in `src/games/connect-pairs/index.ts` — export `plugin: GamePlugin` with `id: 'connect-pairs'`, `name: 'Conecte os Pares'`, `description: 'Conecte elementos que se relacionam!'`, `icon: ConnectPairsIcon`, `component: lazy(() => import('./ConnectPairsGame'))`, `defaultRoundSize: 5`, `difficulties: ['easy', 'medium', 'hard']`, `pointsPerItem: 15`
+- [X] T015 [US4] Register the connect-pairs plugin in `src/games/index.ts` — add `import { plugin as connectPairs } from './connect-pairs';` and `gameRegistry.register(connectPairs);`
 
 **Checkpoint**: Game is discoverable from the home page and fully launchable through the existing routing/GameShell flow.
 
@@ -105,9 +105,9 @@
 
 ### Implementation for User Story 3
 
-- [ ] T016 [US3] Expand pair data in `src/games/connect-pairs/data/pair-sets.ts` — add complete pair sets for ALL 5 categories: "Animais e Sons", "Profissões e Ferramentas", "Alimentos e Origem", "Objetos e Funções", "Emoji e Palavra". Each category MUST have at least 6 pair sets (2 easy/4 pairs, 2 medium/5 pairs, 2 hard/6 pairs). Total: ≥30 pair sets, ≥150 unique pairs. All content in PT-BR, unambiguous for ages 6-10.
-- [ ] T017 [US3] Update `ConnectPairsGame` in `src/games/connect-pairs/ConnectPairsGame.tsx` to use `difficulty` prop for pair count mapping (`easy→4`, `medium→5`, `hard→6`), call `selectPairSet(difficulty, lastCategory)` for category rotation, and track `lastCategory` in component state for variety across rounds
-- [ ] T018 [US3] Add category fallback logic in `src/games/connect-pairs/logic/round-generator.ts` — if a category has fewer pairs than required for the difficulty, fall back to another category with sufficient pairs (edge case from spec)
+- [X] T016 [US3] Expand pair data in `src/games/connect-pairs/data/pair-sets.ts` — add complete pair sets for ALL 5 categories: "Animais e Sons", "Profissões e Ferramentas", "Alimentos e Origem", "Objetos e Funções", "Emoji e Palavra". Each category MUST have at least 6 pair sets (2 easy/4 pairs, 2 medium/5 pairs, 2 hard/6 pairs). Total: ≥30 pair sets, ≥150 unique pairs. All content in PT-BR, unambiguous for ages 6-10.
+- [X] T017 [US3] Update `ConnectPairsGame` in `src/games/connect-pairs/ConnectPairsGame.tsx` to use `difficulty` prop for pair count mapping (`easy→4`, `medium→5`, `hard→6`), call `selectPairSet(difficulty, lastCategory)` for category rotation, and track `lastCategory` in component state for variety across rounds
+- [X] T018 [US3] Add category fallback logic in `src/games/connect-pairs/logic/round-generator.ts` — if a category has fewer pairs than required for the difficulty, fall back to another category with sufficient pairs (edge case from spec)
 
 **Checkpoint**: All difficulty levels work with varied categories. The DifficultySelector (rendered by GameShell) controls pair count and category variety.
 
@@ -117,12 +117,12 @@
 
 **Purpose**: Edge cases, responsive layout, and final quality checks
 
-- [ ] T019 Add responsive CSS styles to `ConnectPairsGame` in `src/games/connect-pairs/ConnectPairsGame.tsx` — ensure two-column layout works on mobile (≥320px) with items ≥48px tall, and on desktop (≥768px) with items ~60px tall. Use design system tokens (`spacing`, `colors`, `radii`, `typography`).
-- [ ] T020 Handle edge case: same-column reselection in `src/games/connect-pairs/logic/pair-matcher.ts` — verify that `SELECT_ITEM` action when the same column already has a selection replaces (not duplicates) the selection per FR-012
-- [ ] T021 Handle edge case: tapping matched items in `src/games/connect-pairs/components/PairItem.tsx` — verify matched items have `pointer-events: none` or ignore click events, items show reduced opacity and are visually non-interactive per FR-004
-- [ ] T022 Add save/restore state support in `src/games/connect-pairs/ConnectPairsGame.tsx` — implement serialization of `RoundState` for `onSaveState` callback and deserialization from `savedState` prop (convert Set to Array for JSON serialization)
-- [ ] T023 Verify build and lint pass by running `npm run build && npm run lint` — fix any TypeScript errors or ESLint warnings in the `src/games/connect-pairs/` module
-- [ ] T024 Run existing test suite with `npm run test` — verify no regressions in existing games or core infrastructure
+- [X] T019 Add responsive CSS styles to `ConnectPairsGame` in `src/games/connect-pairs/ConnectPairsGame.tsx` — ensure two-column layout works on mobile (≥320px) with items ≥48px tall, and on desktop (≥768px) with items ~60px tall. Use design system tokens (`spacing`, `colors`, `radii`, `typography`).
+- [X] T020 Handle edge case: same-column reselection in `src/games/connect-pairs/logic/pair-matcher.ts` — verify that `SELECT_ITEM` action when the same column already has a selection replaces (not duplicates) the selection per FR-012
+- [X] T021 Handle edge case: tapping matched items in `src/games/connect-pairs/components/PairItem.tsx` — verify matched items have `pointer-events: none` or ignore click events, items show reduced opacity and are visually non-interactive per FR-004
+- [X] T022 Add save/restore state support in `src/games/connect-pairs/ConnectPairsGame.tsx` — implement serialization of `RoundState` for `onSaveState` callback and deserialization from `savedState` prop (convert Set to Array for JSON serialization)
+- [X] T023 Verify build and lint pass by running `npm run build && npm run lint` — fix any TypeScript errors or ESLint warnings in the `src/games/connect-pairs/` module
+- [X] T024 Run existing test suite with `npm run test` — verify no regressions in existing games or core infrastructure
 
 ---
 
