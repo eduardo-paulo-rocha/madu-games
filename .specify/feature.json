@@ -1,5 +1,5 @@
 {
-    "feature_directory": "specs/004-rhyme-game",
+    "feature_directory": "specs/006-connect-pairs",
     "parallel_features": [
         "specs/004-rhyme-game",
         "specs/005-logical-sequence",
