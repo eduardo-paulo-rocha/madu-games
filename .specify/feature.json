@@ -1,3 +1,8 @@
 {
-    "feature_directory": "specs/003-found-words-highlighting"
+    "feature_directory": "specs/004-rhyme-game",
+    "parallel_features": [
+        "specs/004-rhyme-game",
+        "specs/005-logical-sequence",
+        "specs/006-connect-pairs"
+    ]
 }
