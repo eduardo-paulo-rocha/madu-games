@@ -1,0 +1,640 @@
+[
+    {
+        "emoji": "🐶",
+        "words": [
+            "cachorro",
+            "cão",
+            "dog"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🐱",
+        "words": [
+            "gato",
+            "gatinho"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🌞",
+        "words": [
+            "sol",
+            "solzinho"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🌙",
+        "words": [
+            "lua"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "⭐",
+        "words": [
+            "estrela"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🌈",
+        "words": [
+            "arcoiris",
+            "arco iris",
+            "arco-iris"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🍎",
+        "words": [
+            "maça",
+            "maca"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🍌",
+        "words": [
+            "banana"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🏠",
+        "words": [
+            "casa",
+            "lar"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "❤️",
+        "words": [
+            "coração",
+            "coracao",
+            "amor"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🌊",
+        "words": [
+            "onda",
+            "mar",
+            "agua"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🔥",
+        "words": [
+            "fogo",
+            "chama"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🎈",
+        "words": [
+            "balão",
+            "balao"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🎂",
+        "words": [
+            "bolo",
+            "aniversario"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🐟",
+        "words": [
+            "peixe",
+            "peixinho"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🦋",
+        "words": [
+            "borboleta"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🌺",
+        "words": [
+            "flor",
+            "flores"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🐸",
+        "words": [
+            "sapo",
+            "ra"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🐢",
+        "words": [
+            "tartaruga"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🍕",
+        "words": [
+            "pizza"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🚗",
+        "words": [
+            "carro",
+            "automovel"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "✈️",
+        "words": [
+            "avião",
+            "aviao"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🚀",
+        "words": [
+            "foguete",
+            "nave"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "📚",
+        "words": [
+            "livro",
+            "livros"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "🎵",
+        "words": [
+            "musica",
+            "nota"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "emoji": "⚽",
+        "words": [
+            "futebol",
+            "bola"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🏀",
+        "words": [
+            "basquete",
+            "bola"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🎸",
+        "words": [
+            "guitarra",
+            "violão",
+            "violao"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🎹",
+        "words": [
+            "piano",
+            "teclado"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🔔",
+        "words": [
+            "sino",
+            "campainha"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🌍",
+        "words": [
+            "terra",
+            "mundo",
+            "planeta"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🏔️",
+        "words": [
+            "montanha",
+            "monte"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🌋",
+        "words": [
+            "vulcão",
+            "vulcao"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🏖️",
+        "words": [
+            "praia"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🎪",
+        "words": [
+            "circo"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🎭",
+        "words": [
+            "teatro",
+            "mascara"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🦁",
+        "words": [
+            "leão",
+            "leao"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🐘",
+        "words": [
+            "elefante"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🦒",
+        "words": [
+            "girafa"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🦜",
+        "words": [
+            "papagaio",
+            "arara"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🐬",
+        "words": [
+            "golfinho"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🦈",
+        "words": [
+            "tubarão",
+            "tubarao"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🍉",
+        "words": [
+            "melancia"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🍇",
+        "words": [
+            "uva",
+            "uvas"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🌽",
+        "words": [
+            "milho"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🥕",
+        "words": [
+            "cenoura"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🧲",
+        "words": [
+            "imã",
+            "ima",
+            "magnet"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🔬",
+        "words": [
+            "microscopio"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "🔭",
+        "words": [
+            "telescopio",
+            "luneta"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "emoji": "💎",
+        "words": [
+            "diamante",
+            "pedra preciosa",
+            "joia"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🏛️",
+        "words": [
+            "museu",
+            "templo",
+            "monumento"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🗽",
+        "words": [
+            "estatua",
+            "liberdade"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🎓",
+        "words": [
+            "formatura",
+            "graduação",
+            "graduacao"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🔑",
+        "words": [
+            "chave"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🧭",
+        "words": [
+            "bussola",
+            "compasso"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "⚓",
+        "words": [
+            "ancora",
+            "âncora"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🏆",
+        "words": [
+            "trofeu",
+            "troféu",
+            "premio"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🎯",
+        "words": [
+            "alvo",
+            "dardo"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🧩",
+        "words": [
+            "quebra-cabeça",
+            "quebra cabeca",
+            "puzzle"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🪐",
+        "words": [
+            "saturno",
+            "planeta"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🌪️",
+        "words": [
+            "tornado",
+            "furacão",
+            "furacao"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🦅",
+        "words": [
+            "aguia",
+            "águia"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🦉",
+        "words": [
+            "coruja"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🦀",
+        "words": [
+            "caranguejo",
+            "siri"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🐙",
+        "words": [
+            "polvo"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🍄",
+        "words": [
+            "cogumelo"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🌵",
+        "words": [
+            "cacto",
+            "cactus"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🎻",
+        "words": [
+            "violino"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🪘",
+        "words": [
+            "tambor",
+            "atabaque"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🏹",
+        "words": [
+            "arco",
+            "flecha",
+            "arco e flecha"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "⚔️",
+        "words": [
+            "espada",
+            "espadas"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🛡️",
+        "words": [
+            "escudo"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "👑",
+        "words": [
+            "coroa",
+            "rei",
+            "rainha"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🗺️",
+        "words": [
+            "mapa",
+            "mapa mundi"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "⏰",
+        "words": [
+            "relogio",
+            "relógio",
+            "despertador"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🧲",
+        "words": [
+            "ima",
+            "imã"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "💡",
+        "words": [
+            "lampada",
+            "lâmpada",
+            "ideia"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "📷",
+        "words": [
+            "camera",
+            "câmera",
+            "foto"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🎬",
+        "words": [
+            "cinema",
+            "filme"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "emoji": "🎨",
+        "words": [
+            "pintura",
+            "arte",
+            "paleta"
+        ],
+        "difficulty": "hard"
+    }
+]

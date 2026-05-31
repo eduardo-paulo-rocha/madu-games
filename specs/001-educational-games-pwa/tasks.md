@@ -20,17 +20,17 @@
 
 **Purpose**: Project initialization, tooling, and dependency installation
 
-- [ ] T001 Initialize Vite + React + TypeScript project with `npm create vite@latest . -- --template react-ts` in repository root
-- [ ] T002 Install production dependencies: react, react-dom, react-router-dom, zustand, framer-motion, idb
-- [ ] T003 [P] Install dev dependencies: vitest, @testing-library/react, playwright, eslint, prettier, @vitejs/plugin-react, vite-plugin-pwa
-- [ ] T004 [P] Configure TypeScript strict mode in tsconfig.json (strict: true, noUncheckedIndexedAccess: true, noUnusedLocals: true)
-- [ ] T005 [P] Configure ESLint strict rules in eslint.config.js (react-hooks, no-unused-vars, consistent-return)
-- [ ] T006 [P] Configure Prettier in .prettierrc (singleQuote, trailingComma: all, semi: true)
-- [ ] T007 Create project folder structure per plan.md: src/core/, src/design-system/, src/pages/, src/games/, tests/, public/
-- [ ] T008 Configure Vite with vite-plugin-pwa in vite.config.ts (precache strategy, manifest generation, workbox config)
-- [ ] T009 [P] Create PWA manifest in public/manifest.json (name: "Madu Games", display: standalone, theme_color, icons placeholder)
-- [ ] T010 [P] Create index.html shell with meta viewport for mobile-first, theme-color meta tag, and manifest link
-- [ ] T011 Configure React Router in src/App.tsx with routes: / (home), /game/:gameId (game shell)
+- [x] T001 Initialize Vite + React + TypeScript project with `npm create vite@latest . -- --template react-ts` in repository root
+- [x] T002 Install production dependencies: react, react-dom, react-router-dom, zustand, framer-motion, idb
+- [x] T003 [P] Install dev dependencies: vitest, @testing-library/react, playwright, eslint, prettier, @vitejs/plugin-react, vite-plugin-pwa
+- [x] T004 [P] Configure TypeScript strict mode in tsconfig.json (strict: true, noUncheckedIndexedAccess: true, noUnusedLocals: true)
+- [x] T005 [P] Configure ESLint strict rules in eslint.config.js (react-hooks, no-unused-vars, consistent-return)
+- [x] T006 [P] Configure Prettier in .prettierrc (singleQuote, trailingComma: all, semi: true)
+- [x] T007 Create project folder structure per plan.md: src/core/, src/design-system/, src/pages/, src/games/, tests/, public/
+- [x] T008 Configure Vite with vite-plugin-pwa in vite.config.ts (precache strategy, manifest generation, workbox config)
+- [x] T009 [P] Create PWA manifest in public/manifest.json (name: "Madu Games", display: standalone, theme_color, icons placeholder)
+- [x] T010 [P] Create index.html shell with meta viewport for mobile-first, theme-color meta tag, and manifest link
+- [x] T011 Configure React Router in src/App.tsx with routes: / (home), /game/:gameId (game shell)
 
 **Checkpoint**: Project compiles, dev server runs, empty app renders at localhost:5173
 
@@ -42,25 +42,25 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T012 Implement GamePlugin, GameProps, RoundResults, and Difficulty type definitions in src/core/registry/types.ts per contracts/game-plugin.md
-- [ ] T013 Implement GameRegistry class (register, getAll, getById) in src/core/registry/game-registry.ts
-- [ ] T014 Implement IndexedDB database setup with versioned schema (stores: sessions, scores) in src/core/storage/db.ts using idb
-- [ ] T015 [P] Implement score-store (getByGameId, upsertHighScore, getAll) in src/core/storage/score-store.ts
-- [ ] T016 [P] Implement session-store (create, update, getInProgress, getByGameId) in src/core/storage/session-store.ts
-- [ ] T017 Implement scoring engine (calculateScore, calculateStars) in src/core/scoring/scoring-engine.ts per FR-012 and FR-023
-- [ ] T018 [P] Implement text normalization utility (NFD decomposition, diacritics strip, lowercase) in src/core/text/normalize.ts
-- [ ] T019 [P] Implement useGameSession hook (create session, update state, complete, abandon) in src/core/hooks/use-game-session.ts
-- [ ] T020 [P] Implement useScores hook (getHighScore, updateIfBetter, getAllForGame) in src/core/hooks/use-scores.ts
-- [ ] T021 Create design system tokens (colors, spacing, typography, breakpoints) in src/design-system/tokens/index.ts — child-friendly palette, large type scale
-- [ ] T022 [P] Implement Button component in src/design-system/components/Button.tsx — large touch target (min 44x44px), rounded, animated press feedback
-- [ ] T023 [P] Implement Card component in src/design-system/components/Card.tsx — game catalog card with icon, title, description, optional score badge
-- [ ] T024 [P] Implement StarRating component in src/design-system/components/StarRating.tsx — displays 0-3 filled/empty stars with animation
-- [ ] T025 [P] Implement CelebrationAnimation component in src/design-system/components/CelebrationAnimation.tsx — confetti/sparkle animation using framer-motion
-- [ ] T026 [P] Implement DifficultySelector component in src/design-system/components/DifficultySelector.tsx — 3 visual buttons (★, ★★, ★★★) with labels Fácil/Médio/Difícil
-- [ ] T027 [P] Implement ScoreDisplay component in src/design-system/components/ScoreDisplay.tsx — shows score, high score, stars, and optional "new record" badge
-- [ ] T028 [P] Implement Keyboard component in src/design-system/components/Keyboard.tsx — child-friendly on-screen keyboard with large letter buttons (A-Z), backspace, confirm
-- [ ] T029 Create shared animation presets (fadeIn, slideUp, scaleIn, celebrate) in src/design-system/animations/presets.ts using framer-motion variants
-- [ ] T030 Create game registration entry point in src/games/index.ts — imports and registers all game plugins
+- [x] T012 Implement GamePlugin, GameProps, RoundResults, and Difficulty type definitions in src/core/registry/types.ts per contracts/game-plugin.md
+- [x] T013 Implement GameRegistry class (register, getAll, getById) in src/core/registry/game-registry.ts
+- [x] T014 Implement IndexedDB database setup with versioned schema (stores: sessions, scores) in src/core/storage/db.ts using idb
+- [x] T015 [P] Implement score-store (getByGameId, upsertHighScore, getAll) in src/core/storage/score-store.ts
+- [x] T016 [P] Implement session-store (create, update, getInProgress, getByGameId) in src/core/storage/session-store.ts
+- [x] T017 Implement scoring engine (calculateScore, calculateStars) in src/core/scoring/scoring-engine.ts per FR-012 and FR-023
+- [x] T018 [P] Implement text normalization utility (NFD decomposition, diacritics strip, lowercase) in src/core/text/normalize.ts
+- [x] T019 [P] Implement useGameSession hook (create session, update state, complete, abandon) in src/core/hooks/use-game-session.ts
+- [x] T020 [P] Implement useScores hook (getHighScore, updateIfBetter, getAllForGame) in src/core/hooks/use-scores.ts
+- [x] T021 Create design system tokens (colors, spacing, typography, breakpoints) in src/design-system/tokens/index.ts — child-friendly palette, large type scale
+- [x] T022 [P] Implement Button component in src/design-system/components/Button.tsx — large touch target (min 44x44px), rounded, animated press feedback
+- [x] T023 [P] Implement Card component in src/design-system/components/Card.tsx — game catalog card with icon, title, description, optional score badge
+- [x] T024 [P] Implement StarRating component in src/design-system/components/StarRating.tsx — displays 0-3 filled/empty stars with animation
+- [x] T025 [P] Implement CelebrationAnimation component in src/design-system/components/CelebrationAnimation.tsx — confetti/sparkle animation using framer-motion
+- [x] T026 [P] Implement DifficultySelector component in src/design-system/components/DifficultySelector.tsx — 3 visual buttons (★, ★★, ★★★) with labels Fácil/Médio/Difícil
+- [x] T027 [P] Implement ScoreDisplay component in src/design-system/components/ScoreDisplay.tsx — shows score, high score, stars, and optional "new record" badge
+- [x] T028 [P] Implement Keyboard component in src/design-system/components/Keyboard.tsx — child-friendly on-screen keyboard with large letter buttons (A-Z), backspace, confirm
+- [x] T029 Create shared animation presets (fadeIn, slideUp, scaleIn, celebrate) in src/design-system/animations/presets.ts using framer-motion variants
+- [x] T030 Create game registration entry point in src/games/index.ts — imports and registers all game plugins
 
 **Checkpoint**: Foundation ready — all shared infrastructure compiles, design system renders, storage reads/writes work. User story implementation can now begin in parallel.
 
@@ -74,11 +74,11 @@
 
 ### Implementation for User Story 1
 
-- [ ] T031 [US1] Implement HomePage component in src/pages/HomePage.tsx — reads games from GameRegistry, renders grid of Card components, handles navigation to /game/:gameId
-- [ ] T032 [US1] Implement GameShell component in src/pages/GameShell.tsx — wraps game component with header (back button, game name), DifficultySelector before start, ScoreDisplay after completion
-- [ ] T033 [US1] Implement GameShell session lifecycle — creates GameSession on difficulty select, passes GameProps to game component, handles onRoundComplete (score screen), handles back (abandon + save state)
-- [ ] T034 [US1] Add page transition animations in src/App.tsx using framer-motion AnimatePresence — slide transitions between home and game pages (< 300ms)
-- [ ] T035 [US1] Implement score result screen within GameShell — displays ScoreDisplay, StarRating, CelebrationAnimation (if stars > 0), "new record" indicator, and "Jogar Novamente" / "Voltar" buttons
+- [x] T031 [US1] Implement HomePage component in src/pages/HomePage.tsx — reads games from GameRegistry, renders grid of Card components, handles navigation to /game/:gameId
+- [x] T032 [US1] Implement GameShell component in src/pages/GameShell.tsx — wraps game component with header (back button, game name), DifficultySelector before start, ScoreDisplay after completion
+- [x] T033 [US1] Implement GameShell session lifecycle — creates GameSession on difficulty select, passes GameProps to game component, handles onRoundComplete (score screen), handles back (abandon + save state)
+- [x] T034 [US1] Add page transition animations in src/App.tsx using framer-motion AnimatePresence — slide transitions between home and game pages (< 300ms)
+- [x] T035 [US1] Implement score result screen within GameShell — displays ScoreDisplay, StarRating, CelebrationAnimation (if stars > 0), "new record" indicator, and "Jogar Novamente" / "Voltar" buttons
 
 **Checkpoint**: App shows game catalog, user can navigate into a game shell (with placeholder content) and back. Session lifecycle (create → in-progress → complete/abandon) works end-to-end.
 
@@ -92,15 +92,15 @@
 
 ### Implementation for User Story 2
 
-- [ ] T036 [P] [US2] Create word lists (PT-BR, child-appropriate) in src/games/word-search/data/words-easy.json (3-5 letter words, ~50 words), words-medium.json (4-7 letters, ~50 words), words-hard.json (6-10 letters, ~50 words)
-- [ ] T037 [US2] Implement grid generation algorithm in src/games/word-search/logic/grid-generator.ts — places N words (based on roundSize) in random directions (horizontal, vertical, diagonal), fills remaining cells with random letters
-- [ ] T038 [US2] Implement word validation logic in src/games/word-search/logic/word-validator.ts — checks if a sequence of cell coordinates forms a valid word from the round's word list (uses normalize.ts for comparison)
-- [ ] T039 [US2] Implement swipe/pan gesture handler in src/games/word-search/components/GridCell.tsx and SwipeDetector.tsx — uses framer-motion onPan to track finger movement across grid cells, highlights cells under finger
-- [ ] T040 [US2] Implement WordSearchGame main component in src/games/word-search/WordSearchGame.tsx — orchestrates grid display, word list sidebar, swipe detection, found-word highlighting, round completion
-- [ ] T041 [US2] Implement word list display component in src/games/word-search/components/WordList.tsx — shows words to find with strikethrough for found words
-- [ ] T042 [US2] Implement WordSearchIcon component in src/games/word-search/components/WordSearchIcon.tsx — visual icon for the home screen card
-- [ ] T043 [US2] Create plugin registration in src/games/word-search/index.ts — exports GamePlugin with id "word-search", name "Caça-Palavras", defaultRoundSize 6, pointsPerItem 10
-- [ ] T044 [US2] Implement save/restore state for word-search — serialize grid state + found words for resume via onSaveState/savedState
+- [x] T036 [P] [US2] Create word lists (PT-BR, child-appropriate) in src/games/word-search/data/words-easy.json (3-5 letter words, ~50 words), words-medium.json (4-7 letters, ~50 words), words-hard.json (6-10 letters, ~50 words)
+- [x] T037 [US2] Implement grid generation algorithm in src/games/word-search/logic/grid-generator.ts — places N words (based on roundSize) in random directions (horizontal, vertical, diagonal), fills remaining cells with random letters
+- [x] T038 [US2] Implement word validation logic in src/games/word-search/logic/word-validator.ts — checks if a sequence of cell coordinates forms a valid word from the round's word list (uses normalize.ts for comparison)
+- [x] T039 [US2] Implement swipe/pan gesture handler in src/games/word-search/components/GridCell.tsx and SwipeDetector.tsx — uses framer-motion onPan to track finger movement across grid cells, highlights cells under finger
+- [x] T040 [US2] Implement WordSearchGame main component in src/games/word-search/WordSearchGame.tsx — orchestrates grid display, word list sidebar, swipe detection, found-word highlighting, round completion
+- [x] T041 [US2] Implement word list display component in src/games/word-search/components/WordList.tsx — shows words to find with strikethrough for found words
+- [x] T042 [US2] Implement WordSearchIcon component in src/games/word-search/components/WordSearchIcon.tsx — visual icon for the home screen card
+- [x] T043 [US2] Create plugin registration in src/games/word-search/index.ts — exports GamePlugin with id "word-search", name "Caça-Palavras", defaultRoundSize 6, pointsPerItem 10
+- [x] T044 [US2] Implement save/restore state for word-search — serialize grid state + found words for resume via onSaveState/savedState
 
 **Checkpoint**: Caça-Palavras is fully playable, scores are saved per difficulty, game appears in catalog. Round generates varied content.
 
@@ -114,15 +114,15 @@
 
 ### Implementation for User Story 3
 
-- [ ] T045 [P] [US3] Create clue data (PT-BR, child-appropriate) in src/games/crossword/data/clues-easy.json (~30 word+clue pairs, 3-5 letter words), clues-medium.json (~30, 4-7 letters), clues-hard.json (~30, 6-10 letters)
-- [ ] T046 [US3] Implement crossword puzzle generation algorithm in src/games/crossword/logic/puzzle-generator.ts — selects N words (roundSize), places them on a grid with intersections, generates crossword layout
-- [ ] T047 [US3] Implement crossword grid component in src/games/crossword/components/CrosswordGrid.tsx — renders cells, handles cell selection (tap), highlights active word direction, shows cell numbers
-- [ ] T048 [US3] Implement clue display component in src/games/crossword/components/ClueList.tsx — shows clues for horizontal/vertical words, highlights active clue
-- [ ] T049 [US3] Implement letter input logic in src/games/crossword/logic/input-handler.ts — validates input (letters only), advances to next cell in word, uses normalize.ts for comparison with correct answer
-- [ ] T050 [US3] Implement CrosswordGame main component in src/games/crossword/CrosswordGame.tsx — orchestrates grid, clues, keyboard input, word completion detection, round completion
-- [ ] T051 [US3] Implement CrosswordIcon component in src/games/crossword/components/CrosswordIcon.tsx — visual icon for the home screen card
-- [ ] T052 [US3] Create plugin registration in src/games/crossword/index.ts — exports GamePlugin with id "crossword", name "Cruzadinha", defaultRoundSize 5, pointsPerItem 10
-- [ ] T053 [US3] Implement save/restore state for crossword — serialize grid state + filled letters for resume via onSaveState/savedState
+- [x] T045 [P] [US3] Create clue data (PT-BR, child-appropriate) in src/games/crossword/data/clues-easy.json (~30 word+clue pairs, 3-5 letter words), clues-medium.json (~30, 4-7 letters), clues-hard.json (~30, 6-10 letters)
+- [x] T046 [US3] Implement crossword puzzle generation algorithm in src/games/crossword/logic/puzzle-generator.ts — selects N words (roundSize), places them on a grid with intersections, generates crossword layout
+- [x] T047 [US3] Implement crossword grid component in src/games/crossword/components/CrosswordGrid.tsx — renders cells, handles cell selection (tap), highlights active word direction, shows cell numbers
+- [x] T048 [US3] Implement clue display component in src/games/crossword/components/ClueList.tsx — shows clues for horizontal/vertical words, highlights active clue
+- [x] T049 [US3] Implement letter input logic in src/games/crossword/logic/input-handler.ts — validates input (letters only), advances to next cell in word, uses normalize.ts for comparison with correct answer
+- [x] T050 [US3] Implement CrosswordGame main component in src/games/crossword/CrosswordGame.tsx — orchestrates grid, clues, keyboard input, word completion detection, round completion
+- [x] T051 [US3] Implement CrosswordIcon component in src/games/crossword/components/CrosswordIcon.tsx — visual icon for the home screen card
+- [x] T052 [US3] Create plugin registration in src/games/crossword/index.ts — exports GamePlugin with id "crossword", name "Cruzadinha", defaultRoundSize 5, pointsPerItem 10
+- [x] T053 [US3] Implement save/restore state for crossword — serialize grid state + filled letters for resume via onSaveState/savedState
 
 **Checkpoint**: Cruzadinha is fully playable, scores are saved per difficulty, game appears in catalog alongside Caça-Palavras.
 
@@ -136,15 +136,15 @@
 
 ### Implementation for User Story 4
 
-- [ ] T054 [P] [US4] Create curated emoji dictionary in src/games/emoji-guess/data/emoji-dictionary.json — ~80 entries with emoji, accepted words (including synonyms), and difficulty classification, all appropriate for children ≤10 years
-- [ ] T055 [US4] Implement emoji round selection logic in src/games/emoji-guess/logic/round-selector.ts — selects N emojis (roundSize) for the chosen difficulty, avoids repetition from recent sessions
-- [ ] T056 [US4] Implement answer validation logic in src/games/emoji-guess/logic/answer-validator.ts — normalizes input (normalize.ts), compares against accepted words list, filters only letters (FR-018)
-- [ ] T057 [US4] Implement EmojiGuessGame main component in src/games/emoji-guess/EmojiGuessGame.tsx — displays emoji, input field, Keyboard, validates answer, advances to next emoji or completes round
-- [ ] T058 [US4] Implement emoji display component in src/games/emoji-guess/components/EmojiDisplay.tsx — renders emoji at large size with animation on transition between emojis
-- [ ] T059 [US4] Implement answer input component in src/games/emoji-guess/components/AnswerInput.tsx — text field restricted to letters only, integrates with Keyboard component, shows gentle hint on incorrect answer
-- [ ] T060 [US4] Implement EmojiGuessIcon component in src/games/emoji-guess/components/EmojiGuessIcon.tsx — visual icon for the home screen card
-- [ ] T061 [US4] Create plugin registration in src/games/emoji-guess/index.ts — exports GamePlugin with id "emoji-guess", name "Adivinhe o Emoji", defaultRoundSize 8, pointsPerItem 10
-- [ ] T062 [US4] Implement save/restore state for emoji-guess — serialize current emoji index + answered emojis for resume via onSaveState/savedState
+- [x] T054 [P] [US4] Create curated emoji dictionary in src/games/emoji-guess/data/emoji-dictionary.json — ~80 entries with emoji, accepted words (including synonyms), and difficulty classification, all appropriate for children ≤10 years
+- [x] T055 [US4] Implement emoji round selection logic in src/games/emoji-guess/logic/round-selector.ts — selects N emojis (roundSize) for the chosen difficulty, avoids repetition from recent sessions
+- [x] T056 [US4] Implement answer validation logic in src/games/emoji-guess/logic/answer-validator.ts — normalizes input (normalize.ts), compares against accepted words list, filters only letters (FR-018)
+- [x] T057 [US4] Implement EmojiGuessGame main component in src/games/emoji-guess/EmojiGuessGame.tsx — displays emoji, input field, Keyboard, validates answer, advances to next emoji or completes round
+- [x] T058 [US4] Implement emoji display component in src/games/emoji-guess/components/EmojiDisplay.tsx — renders emoji at large size with animation on transition between emojis
+- [x] T059 [US4] Implement answer input component in src/games/emoji-guess/components/AnswerInput.tsx — text field restricted to letters only, integrates with Keyboard component, shows gentle hint on incorrect answer
+- [x] T060 [US4] Implement EmojiGuessIcon component in src/games/emoji-guess/components/EmojiGuessIcon.tsx — visual icon for the home screen card
+- [x] T061 [US4] Create plugin registration in src/games/emoji-guess/index.ts — exports GamePlugin with id "emoji-guess", name "Adivinhe o Emoji", defaultRoundSize 8, pointsPerItem 10
+- [x] T062 [US4] Implement save/restore state for emoji-guess — serialize current emoji index + answered emojis for resume via onSaveState/savedState
 
 **Checkpoint**: Adivinhe o Emoji is fully playable, emoji dictionary validates correctly (including synonyms), scores saved per difficulty.
 
@@ -158,10 +158,10 @@
 
 ### Implementation for User Story 5
 
-- [ ] T063 [US5] Enhance HomePage Card component to display high score badge and best stars per game (read from useScores hook) in src/pages/HomePage.tsx
-- [ ] T064 [US5] Implement "new record" detection logic in GameShell score screen — compare session score with stored highScore, trigger special animation if new record
-- [ ] T065 [US5] Implement NewRecordAnimation component in src/design-system/components/NewRecordAnimation.tsx — special celebratory animation (larger, more particles) for when the player beats their high score
-- [ ] T066 [US5] Implement "not yet played" state for game cards in HomePage — show inviting visual (e.g., sparkle/question mark) when no scores exist for a game+difficulty
+- [x] T063 [US5] Enhance HomePage Card component to display high score badge and best stars per game (read from useScores hook) in src/pages/HomePage.tsx
+- [x] T064 [US5] Implement "new record" detection logic in GameShell score screen — compare session score with stored highScore, trigger special animation if new record
+- [x] T065 [US5] Implement NewRecordAnimation component in src/design-system/components/NewRecordAnimation.tsx — special celebratory animation (larger, more particles) for when the player beats their high score
+- [x] T066 [US5] Implement "not yet played" state for game cards in HomePage — show inviting visual (e.g., sparkle/question mark) when no scores exist for a game+difficulty
 
 **Checkpoint**: Gamification loop complete — scores persist, records tracked per game+difficulty, visual feedback for achievements.
 
@@ -175,12 +175,12 @@
 
 ### Implementation for User Story 6
 
-- [ ] T067 [US6] Configure Workbox precaching strategy in vite.config.ts — precache all static assets (JS chunks, JSON data files, fonts, icons), set navigateFallback to index.html
-- [ ] T068 [US6] Implement service worker registration in src/main.tsx — register SW on first load, handle update detection with user prompt
-- [ ] T069 [US6] Create PWA icons in public/icons/ — generate icon set (192x192, 512x512, maskable) with child-friendly Madu Games branding
-- [ ] T070 [US6] Finalize manifest.json with complete configuration — start_url: "/", display: standalone, orientation: portrait, background_color, categories, screenshots for install prompt
-- [ ] T071 [US6] Implement offline fallback handling — graceful error boundary if any asset fails, informative message if storage is full (edge case)
-- [ ] T072 [US6] Add install prompt UX — capture beforeinstallprompt event, show non-intrusive "Instalar" button after first game completion, iOS manual instruction fallback
+- [x] T067 [US6] Configure Workbox precaching strategy in vite.config.ts — precache all static assets (JS chunks, JSON data files, fonts, icons), set navigateFallback to index.html
+- [x] T068 [US6] Implement service worker registration in src/main.tsx — register SW on first load, handle update detection with user prompt
+- [x] T069 [US6] Create PWA icons in public/icons/ — generate icon set (192x192, 512x512, maskable) with child-friendly Madu Games branding
+- [x] T070 [US6] Finalize manifest.json with complete configuration — start_url: "/", display: standalone, orientation: portrait, background_color, categories, screenshots for install prompt
+- [x] T071 [US6] Implement offline fallback handling — graceful error boundary if any asset fails, informative message if storage is full (edge case)
+- [x] T072 [US6] Add install prompt UX — capture beforeinstallprompt event, show non-intrusive "Instalar" button after first game completion, iOS manual instruction fallback
 
 **Checkpoint**: App passes Lighthouse PWA audit ≥ 95. Works fully offline. Installable on Android, iOS, and Windows.
 
@@ -190,12 +190,12 @@
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T073 [P] Performance audit — verify < 5MB bundle (run build + analyze), verify 60fps animations (Chrome DevTools), verify < 300ms transitions
-- [ ] T074 [P] Accessibility pass — verify 44x44px touch targets, color contrast ratios (WCAG AA), focus indicators for keyboard navigation
-- [ ] T075 [P] Responsive testing — verify layout at 320px, 375px, 414px, 768px widths; ensure grid adapts correctly
-- [ ] T076 [P] Add loading states — Suspense fallbacks for lazy-loaded game components with child-friendly spinner/skeleton
-- [ ] T077 Code cleanup — remove any dead code, verify no TODO hacks remain, ensure consistent naming across modules
-- [ ] T078 Run quickstart.md validation — follow all setup steps from scratch, verify dev server starts, all games load, offline works
+- [x] T073 [P] Performance audit — verify < 5MB bundle (run build + analyze), verify 60fps animations (Chrome DevTools), verify < 300ms transitions
+- [x] T074 [P] Accessibility pass — verify 44x44px touch targets, color contrast ratios (WCAG AA), focus indicators for keyboard navigation
+- [x] T075 [P] Responsive testing — verify layout at 320px, 375px, 414px, 768px widths; ensure grid adapts correctly
+- [x] T076 [P] Add loading states — Suspense fallbacks for lazy-loaded game components with child-friendly spinner/skeleton
+- [x] T077 Code cleanup — remove any dead code, verify no TODO hacks remain, ensure consistent naming across modules
+- [x] T078 Run quickstart.md validation — follow all setup steps from scratch, verify dev server starts, all games load, offline works
 
 ---
 
