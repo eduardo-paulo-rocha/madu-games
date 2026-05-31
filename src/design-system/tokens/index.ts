@@ -66,3 +66,16 @@ export const shadows = {
     md: '0 4px 12px rgba(45, 43, 85, 0.12)',
     lg: '0 8px 24px rgba(45, 43, 85, 0.16)',
 } as const;
+
+export const wordHighlightColors = [
+    '#B3E5FC',
+    '#C8E6C9',
+    '#FFE0B2',
+    '#E1BEE7',
+    '#FFCCBC',
+    '#B2DFDB',
+    '#FFF9C4',
+    '#F8BBD0',
+    '#D1C4E9',
+    '#DCEDC8',
+] as const;

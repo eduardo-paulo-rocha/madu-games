@@ -18,6 +18,7 @@ export async function createSession(
         totalItems,
         correctItems: 0,
         stars: 0,
+        hintCount: 0,
         state: null,
     };
     await db.add('sessions', session);
@@ -40,6 +41,7 @@ export async function completeSession(
     score: number,
     correctItems: number,
     stars: number,
+    hintCount: number = 0,
 ): Promise<void> {
     await updateSession(id, {
         status: 'completed',
@@ -48,6 +50,14 @@ export async function completeSession(
         correctItems,
         stars,
     });
+    if (hintCount > 0) {
+        const db = await getDB();
+        const session = await db.get('sessions', id);
+        if (session) {
+            const updated = { ...session, hintCount };
+            await db.put('sessions', updated);
+        }
+    }
 }
 
 export async function abandonSession(id: string): Promise<void> {

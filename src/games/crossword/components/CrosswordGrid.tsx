@@ -1,12 +1,24 @@
 import { colors, typography } from '../../../design-system/tokens';
+import { wordHighlightColors } from '../../../design-system/tokens';
 import type { PlacedClue } from '../logic/puzzle-generator';
+
+interface FilledCell {
+    letter: string;
+    isHint: boolean;
+}
+
+interface CompletedWordInfo {
+    colorIndex: number;
+    completedOrder: number;
+}
 
 interface CrosswordGridProps {
     gridSize: number;
     placedClues: PlacedClue[];
-    filledLetters: Map<string, string>;
+    filledLetters: Map<string, FilledCell>;
     activeClue: PlacedClue | null;
     selectedCell: { row: number; col: number } | null;
+    completedWords: Map<string, CompletedWordInfo>;
     onCellClick: (row: number, col: number) => void;
 }
 
@@ -16,6 +28,7 @@ export function CrosswordGrid({
     filledLetters,
     activeClue,
     selectedCell,
+    completedWords,
     onCellClick,
 }: CrosswordGridProps) {
     const cellKey = (r: number, c: number) => `${r},${c}`;
@@ -24,11 +37,25 @@ export function CrosswordGrid({
     const wordCells = new Set<string>();
     const cellNumbers = new Map<string, number>();
 
+    // Map cells to which completed words they belong to (for coloring)
+    const cellCompletedWord = new Map<string, CompletedWordInfo>();
+
     placedClues.forEach((clue) => {
         const dr = clue.direction === 'down' ? 1 : 0;
         const dc = clue.direction === 'across' ? 1 : 0;
+        const wordInfo = completedWords.get(clue.normalizedWord);
+
         for (let i = 0; i < clue.normalizedWord.length; i++) {
-            wordCells.add(cellKey(clue.startRow + i * dr, clue.startCol + i * dc));
+            const key = cellKey(clue.startRow + i * dr, clue.startCol + i * dc);
+            wordCells.add(key);
+
+            if (wordInfo) {
+                const existing = cellCompletedWord.get(key);
+                // For intersections, pick the most recently completed word
+                if (!existing || wordInfo.completedOrder > existing.completedOrder) {
+                    cellCompletedWord.set(key, wordInfo);
+                }
+            }
         }
         const startKey = cellKey(clue.startRow, clue.startCol);
         if (!cellNumbers.has(startKey)) {
@@ -79,10 +106,21 @@ export function CrosswordGrid({
                     const number = cellNumbers.get(key);
                     const isActive = activeCells.has(key);
                     const isSelected = selectedCell?.row === r && selectedCell?.col === c;
-                    const filled = filledLetters.get(key);
+                    const filledCell = filledLetters.get(key);
+                    const completedInfo = cellCompletedWord.get(key);
 
                     if (!isWordCell) {
                         return <div key={key} style={{ width: cellSizePx, height: cellSizePx }} />;
+                    }
+
+                    // Determine background color
+                    let bgColor: string = colors.surface;
+                    if (isSelected) {
+                        bgColor = `${colors.primary}40`;
+                    } else if (completedInfo) {
+                        bgColor = wordHighlightColors[completedInfo.colorIndex] ?? colors.surface;
+                    } else if (isActive) {
+                        bgColor = `${colors.primary}15`;
                     }
 
                     return (
@@ -92,11 +130,7 @@ export function CrosswordGrid({
                             style={{
                                 width: cellSizePx,
                                 height: cellSizePx,
-                                backgroundColor: isSelected
-                                    ? `${colors.primary}40`
-                                    : isActive
-                                        ? `${colors.primary}15`
-                                        : colors.surface,
+                                backgroundColor: bgColor,
                                 border: isSelected
                                     ? `2px solid ${colors.primary}`
                                     : `1px solid ${colors.border}`,
@@ -108,7 +142,12 @@ export function CrosswordGrid({
                                 cursor: 'pointer',
                                 fontSize: Math.max(12, cellSizePx * 0.5),
                                 fontWeight: typography.fontWeight.bold,
-                                color: filled ? colors.textPrimary : colors.textSecondary,
+                                color: filledCell?.isHint
+                                    ? colors.primary
+                                    : filledCell
+                                        ? colors.textPrimary
+                                        : colors.textSecondary,
+                                fontStyle: filledCell?.isHint ? 'italic' : 'normal',
                             }}
                         >
                             {number && (
@@ -125,7 +164,7 @@ export function CrosswordGrid({
                                     {number}
                                 </span>
                             )}
-                            {filled || ''}
+                            {filledCell?.letter || ''}
                         </div>
                     );
                 }),

@@ -4,9 +4,12 @@ import { colors, spacing, typography, radii } from '../../../design-system/token
 interface AnswerInputProps {
     value: string;
     isWrong: boolean;
+    lockedPositions?: Set<number>;
 }
 
-export function AnswerInput({ value, isWrong }: AnswerInputProps) {
+export function AnswerInput({ value, isWrong, lockedPositions }: AnswerInputProps) {
+    const hasLockedPositions = lockedPositions && lockedPositions.size > 0;
+
     return (
         <motion.div
             animate={isWrong ? { x: [-8, 8, -6, 6, -4, 4, 0] } : {}}
@@ -21,14 +24,33 @@ export function AnswerInput({ value, isWrong }: AnswerInputProps) {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
+                gap: '2px',
                 fontSize: typography.fontSize.xl,
                 fontWeight: typography.fontWeight.bold,
                 color: colors.textPrimary,
                 fontFamily: typography.fontFamily,
-                letterSpacing: '2px',
+                letterSpacing: hasLockedPositions ? '0px' : '2px',
             }}
         >
-            {value || (
+            {value ? (
+                hasLockedPositions ? (
+                    value.split('').map((char, i) => (
+                        <span
+                            key={i}
+                            style={{
+                                color: lockedPositions.has(i) ? colors.accent : colors.textPrimary,
+                                fontWeight: lockedPositions.has(i) ? typography.fontWeight.bold : typography.fontWeight.bold,
+                                borderBottom: lockedPositions.has(i) ? `2px solid ${colors.accent}` : 'none',
+                                padding: '0 1px',
+                            }}
+                        >
+                            {char}
+                        </span>
+                    ))
+                ) : (
+                    value
+                )
+            ) : (
                 <span style={{ color: colors.textSecondary, fontWeight: typography.fontWeight.normal }}>
                     Digite a resposta...
                 </span>

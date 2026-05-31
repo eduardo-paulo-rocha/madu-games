@@ -27,6 +27,7 @@ export interface GameProps {
 export interface RoundResults {
     totalItems: number;
     correctItems: number;
+    hintCount?: number;
 }
 
 export interface GameSession {
@@ -40,6 +41,7 @@ export interface GameSession {
     totalItems: number;
     correctItems: number;
     stars: number;
+    hintCount?: number;
     state: unknown;
 }
 

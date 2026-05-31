@@ -2,6 +2,15 @@ export function calculateScore(correctItems: number, pointsPerItem: number): num
     return correctItems * pointsPerItem;
 }
 
+export function calculateScoreWithHints(
+    correctItems: number,
+    pointsPerItem: number,
+    hintCount: number,
+    hintPenalty: number = 5,
+): number {
+    return correctItems * pointsPerItem - hintCount * hintPenalty;
+}
+
 export function calculateStars(correctItems: number, totalItems: number): number {
     if (totalItems === 0) return 0;
     const ratio = correctItems / totalItems;

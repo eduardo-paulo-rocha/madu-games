@@ -1,7 +1,7 @@
 import { useState, useCallback, useRef } from 'react';
 import type { Difficulty, GameSession, RoundResults } from '../registry/types';
 import { createSession, updateSession, completeSession, abandonSession } from '../storage/session-store';
-import { calculateScore, calculateStars } from '../scoring/scoring-engine';
+import { calculateScoreWithHints, calculateStars } from '../scoring/scoring-engine';
 import { upsertHighScore } from '../storage/score-store';
 
 interface UseGameSessionOptions {
@@ -41,10 +41,10 @@ export function useGameSession({ gameId, pointsPerItem }: UseGameSessionOptions)
     const handleRoundComplete = useCallback(
         async (results: RoundResults) => {
             if (!session) return;
-            const score = calculateScore(results.correctItems, pointsPerItem);
+            const score = calculateScoreWithHints(results.correctItems, pointsPerItem, results.hintCount ?? 0);
             const stars = calculateStars(results.correctItems, results.totalItems);
 
-            await completeSession(session.id, score, results.correctItems, stars);
+            await completeSession(session.id, score, results.correctItems, stars, results.hintCount ?? 0);
 
             const scoreRecord = await upsertHighScore(session.gameId, session.difficulty, score, stars);
             setIsNewRecord(scoreRecord.highScore === score && scoreRecord.totalGamesPlayed > 1);
