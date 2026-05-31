@@ -186,7 +186,7 @@ export default function WordSearchGame({
         }
 
         setSelectedCells([]);
-    }, [isSelecting, selectedCells, placedWords, foundWords, onCorrectItem, onRoundComplete]);
+    }, [isSelecting, selectedCells, placedWords, foundWords, hintedWordCells, hintCount, onCorrectItem, onRoundComplete]);
 
     const selectedSet = new Set(selectedCells.map((c) => cellKey(c.row, c.col)));
     const hintedCellSet = new Set(

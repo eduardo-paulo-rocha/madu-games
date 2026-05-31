@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
 import type { GameProps } from '../../core/registry/types';
 import { generatePuzzle, type PlacedClue } from './logic/puzzle-generator';
 import { normalizeText } from '../../core/text/normalize';
@@ -116,7 +116,7 @@ export default function CrosswordGame({
     const handleWordCompletion = useCallback(
         (newLetters: Map<string, FilledCell>, currentHintCount: number) => {
             // Check all clues for completion
-            let newCompleted = new Map(completedWords);
+            const newCompleted = new Map(completedWords);
             let counter = completionCounter;
             let anyNewCompletion = false;
 
@@ -191,7 +191,7 @@ export default function CrosswordGame({
         onHint: onHintCallback,
         isDisabled: isHintDisabled,
     });
-    hintCountRef.current = hintCount;
+    useEffect(() => { hintCountRef.current = hintCount; }, [hintCount]);
 
     const onKeyPress = useCallback(
         (key: string) => {
