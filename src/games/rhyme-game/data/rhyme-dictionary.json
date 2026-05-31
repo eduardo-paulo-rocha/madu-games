@@ -1,0 +1,912 @@
+[
+  {
+    "target": { "word": "gato", "emoji": "🐱" },
+    "correct": { "word": "sapato", "emoji": "👟" },
+    "distractors": [
+      { "word": "árvore", "emoji": "🌳" },
+      { "word": "boneca", "emoji": "🧸" },
+      { "word": "janela", "emoji": "🪟" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "pão", "emoji": "🍞" },
+    "correct": { "word": "mão", "emoji": "✋" },
+    "distractors": [
+      { "word": "mesa", "emoji": "🪑" },
+      { "word": "livro", "emoji": "📖" },
+      { "word": "porta", "emoji": "🚪" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "bola", "emoji": "⚽" },
+    "correct": { "word": "escola", "emoji": "🏫" },
+    "distractors": [
+      { "word": "chuva", "emoji": "🌧️" },
+      { "word": "peixe", "emoji": "🐟" },
+      { "word": "lápis", "emoji": "✏️" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "flor", "emoji": "🌸" },
+    "correct": { "word": "amor", "emoji": "❤️" },
+    "distractors": [
+      { "word": "casa", "emoji": "🏠" },
+      { "word": "sapo", "emoji": "🐸" },
+      { "word": "nuvem", "emoji": "☁️" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "anel", "emoji": "💍" },
+    "correct": { "word": "papel", "emoji": "📄" },
+    "distractors": [
+      { "word": "tigre", "emoji": "🐯" },
+      { "word": "carro", "emoji": "🚗" },
+      { "word": "leite", "emoji": "🥛" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "lua", "emoji": "🌙" },
+    "correct": { "word": "rua", "emoji": "🛣️" },
+    "distractors": [
+      { "word": "banco", "emoji": "🪑" },
+      { "word": "prato", "emoji": "🍽️" },
+      { "word": "dente", "emoji": "🦷" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "pato", "emoji": "🦆" },
+    "correct": { "word": "rato", "emoji": "🐭" },
+    "distractors": [
+      { "word": "cobra", "emoji": "🐍" },
+      { "word": "folha", "emoji": "🍃" },
+      { "word": "chuva", "emoji": "🌧️" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "sol", "emoji": "☀️" },
+    "correct": { "word": "farol", "emoji": "🚦" },
+    "distractors": [
+      { "word": "gelo", "emoji": "🧊" },
+      { "word": "cama", "emoji": "🛏️" },
+      { "word": "bolo", "emoji": "🎂" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "rei", "emoji": "👑" },
+    "correct": { "word": "lei", "emoji": "📜" },
+    "distractors": [
+      { "word": "fogo", "emoji": "🔥" },
+      { "word": "barco", "emoji": "⛵" },
+      { "word": "milho", "emoji": "🌽" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "dado", "emoji": "🎲" },
+    "correct": { "word": "soldado", "emoji": "💂" },
+    "distractors": [
+      { "word": "nuvem", "emoji": "☁️" },
+      { "word": "relógio", "emoji": "⏰" },
+      { "word": "escada", "emoji": "🪜" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "vela", "emoji": "🕯️" },
+    "correct": { "word": "panela", "emoji": "🍲" },
+    "distractors": [
+      { "word": "tigre", "emoji": "🐯" },
+      { "word": "pincel", "emoji": "🖌️" },
+      { "word": "sorvete", "emoji": "🍦" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "mala", "emoji": "🧳" },
+    "correct": { "word": "bala", "emoji": "🍬" },
+    "distractors": [
+      { "word": "fada", "emoji": "🧚" },
+      { "word": "pedra", "emoji": "🪨" },
+      { "word": "ninho", "emoji": "🪹" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "cama", "emoji": "🛏️" },
+    "correct": { "word": "fama", "emoji": "⭐" },
+    "distractors": [
+      { "word": "peixe", "emoji": "🐟" },
+      { "word": "balde", "emoji": "🪣" },
+      { "word": "porta", "emoji": "🚪" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "pé", "emoji": "🦶" },
+    "correct": { "word": "café", "emoji": "☕" },
+    "distractors": [
+      { "word": "gelo", "emoji": "🧊" },
+      { "word": "sapo", "emoji": "🐸" },
+      { "word": "sino", "emoji": "🔔" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "ouro", "emoji": "🥇" },
+    "correct": { "word": "touro", "emoji": "🐂" },
+    "distractors": [
+      { "word": "roda", "emoji": "🛞" },
+      { "word": "folha", "emoji": "🍃" },
+      { "word": "nuvem", "emoji": "☁️" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "coco", "emoji": "🥥" },
+    "correct": { "word": "foco", "emoji": "🔦" },
+    "distractors": [
+      { "word": "sapo", "emoji": "🐸" },
+      { "word": "dente", "emoji": "🦷" },
+      { "word": "leque", "emoji": "🪭" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "pipa", "emoji": "🪁" },
+    "correct": { "word": "gripa", "emoji": "🤒" },
+    "distractors": [
+      { "word": "tinta", "emoji": "🎨" },
+      { "word": "livro", "emoji": "📖" },
+      { "word": "vento", "emoji": "💨" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "bico", "emoji": "🐦" },
+    "correct": { "word": "rico", "emoji": "💰" },
+    "distractors": [
+      { "word": "terra", "emoji": "🌍" },
+      { "word": "chuva", "emoji": "🌧️" },
+      { "word": "pena", "emoji": "🪶" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "casa", "emoji": "🏠" },
+    "correct": { "word": "asa", "emoji": "🪽" },
+    "distractors": [
+      { "word": "lobo", "emoji": "🐺" },
+      { "word": "navio", "emoji": "🚢" },
+      { "word": "dedo", "emoji": "👆" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "fogo", "emoji": "🔥" },
+    "correct": { "word": "jogo", "emoji": "🎮" },
+    "distractors": [
+      { "word": "mapa", "emoji": "🗺️" },
+      { "word": "chuva", "emoji": "🌧️" },
+      { "word": "lápis", "emoji": "✏️" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "rosa", "emoji": "🌹" },
+    "correct": { "word": "prosa", "emoji": "💬" },
+    "distractors": [
+      { "word": "tigre", "emoji": "🐯" },
+      { "word": "balde", "emoji": "🪣" },
+      { "word": "milho", "emoji": "🌽" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "nó", "emoji": "🪢" },
+    "correct": { "word": "cipó", "emoji": "🌿" },
+    "distractors": [
+      { "word": "porta", "emoji": "🚪" },
+      { "word": "barco", "emoji": "⛵" },
+      { "word": "peixe", "emoji": "🐟" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "mel", "emoji": "🍯" },
+    "correct": { "word": "anel", "emoji": "💍" },
+    "distractors": [
+      { "word": "sapo", "emoji": "🐸" },
+      { "word": "tinta", "emoji": "🎨" },
+      { "word": "pedra", "emoji": "🪨" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "mato", "emoji": "🌾" },
+    "correct": { "word": "prato", "emoji": "🍽️" },
+    "distractors": [
+      { "word": "cobra", "emoji": "🐍" },
+      { "word": "sino", "emoji": "🔔" },
+      { "word": "dente", "emoji": "🦷" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "rio", "emoji": "🏞️" },
+    "correct": { "word": "frio", "emoji": "🥶" },
+    "distractors": [
+      { "word": "mesa", "emoji": "🪑" },
+      { "word": "folha", "emoji": "🍃" },
+      { "word": "bolo", "emoji": "🎂" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "dedo", "emoji": "👆" },
+    "correct": { "word": "medo", "emoji": "😨" },
+    "distractors": [
+      { "word": "barco", "emoji": "⛵" },
+      { "word": "tigre", "emoji": "🐯" },
+      { "word": "milho", "emoji": "🌽" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "uva", "emoji": "🍇" },
+    "correct": { "word": "luva", "emoji": "🧤" },
+    "distractors": [
+      { "word": "mesa", "emoji": "🪑" },
+      { "word": "peixe", "emoji": "🐟" },
+      { "word": "gelo", "emoji": "🧊" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "sino", "emoji": "🔔" },
+    "correct": { "word": "menino", "emoji": "👦" },
+    "distractors": [
+      { "word": "tigre", "emoji": "🐯" },
+      { "word": "pedra", "emoji": "🪨" },
+      { "word": "porta", "emoji": "🚪" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "fada", "emoji": "🧚" },
+    "correct": { "word": "espada", "emoji": "⚔️" },
+    "distractors": [
+      { "word": "sapo", "emoji": "🐸" },
+      { "word": "chuva", "emoji": "🌧️" },
+      { "word": "balde", "emoji": "🪣" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "leão", "emoji": "🦁" },
+    "correct": { "word": "feijão", "emoji": "🫘" },
+    "distractors": [
+      { "word": "peixe", "emoji": "🐟" },
+      { "word": "cobra", "emoji": "🐍" },
+      { "word": "folha", "emoji": "🍃" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "target": { "word": "caneta", "emoji": "🖊️" },
+    "correct": { "word": "borboleta", "emoji": "🦋" },
+    "distractors": [
+      { "word": "girafa", "emoji": "🦒" },
+      { "word": "montanha", "emoji": "🏔️" },
+      { "word": "caderno", "emoji": "📓" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "castelo", "emoji": "🏰" },
+    "correct": { "word": "cogumelo", "emoji": "🍄" },
+    "distractors": [
+      { "word": "espelho", "emoji": "🪞" },
+      { "word": "jardim", "emoji": "🌷" },
+      { "word": "tapete", "emoji": "🧶" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "estrela", "emoji": "⭐" },
+    "correct": { "word": "janela", "emoji": "🪟" },
+    "distractors": [
+      { "word": "foguete", "emoji": "🚀" },
+      { "word": "abacaxi", "emoji": "🍍" },
+      { "word": "violão", "emoji": "🎸" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "presente", "emoji": "🎁" },
+    "correct": { "word": "semente", "emoji": "🌱" },
+    "distractors": [
+      { "word": "cavalo", "emoji": "🐴" },
+      { "word": "baleia", "emoji": "🐋" },
+      { "word": "sorvete", "emoji": "🍦" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "navio", "emoji": "🚢" },
+    "correct": { "word": "rio", "emoji": "🏞️" },
+    "distractors": [
+      { "word": "cachorro", "emoji": "🐕" },
+      { "word": "abacate", "emoji": "🥑" },
+      { "word": "cometa", "emoji": "☄️" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "galinha", "emoji": "🐔" },
+    "correct": { "word": "farinha", "emoji": "🌾" },
+    "distractors": [
+      { "word": "elefante", "emoji": "🐘" },
+      { "word": "pirulito", "emoji": "🍭" },
+      { "word": "tartaruga", "emoji": "🐢" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "cadeira", "emoji": "🪑" },
+    "correct": { "word": "bandeira", "emoji": "🚩" },
+    "distractors": [
+      { "word": "cenoura", "emoji": "🥕" },
+      { "word": "guitarra", "emoji": "🎸" },
+      { "word": "sorvete", "emoji": "🍦" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "coelho", "emoji": "🐰" },
+    "correct": { "word": "espelho", "emoji": "🪞" },
+    "distractors": [
+      { "word": "girafa", "emoji": "🦒" },
+      { "word": "panela", "emoji": "🍲" },
+      { "word": "violino", "emoji": "🎻" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "tesoura", "emoji": "✂️" },
+    "correct": { "word": "cenoura", "emoji": "🥕" },
+    "distractors": [
+      { "word": "abóbora", "emoji": "🎃" },
+      { "word": "guitarra", "emoji": "🎸" },
+      { "word": "passarinho", "emoji": "🐦" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "violão", "emoji": "🎸" },
+    "correct": { "word": "avião", "emoji": "✈️" },
+    "distractors": [
+      { "word": "palhaço", "emoji": "🤡" },
+      { "word": "cachoeira", "emoji": "🏞️" },
+      { "word": "lanterna", "emoji": "🔦" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "cavalo", "emoji": "🐴" },
+    "correct": { "word": "regalo", "emoji": "🎁" },
+    "distractors": [
+      { "word": "tomate", "emoji": "🍅" },
+      { "word": "pirulito", "emoji": "🍭" },
+      { "word": "abacaxi", "emoji": "🍍" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "formiga", "emoji": "🐜" },
+    "correct": { "word": "barriga", "emoji": "🤰" },
+    "distractors": [
+      { "word": "elefante", "emoji": "🐘" },
+      { "word": "chocolate", "emoji": "🍫" },
+      { "word": "abacate", "emoji": "🥑" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "baleia", "emoji": "🐋" },
+    "correct": { "word": "sereia", "emoji": "🧜" },
+    "distractors": [
+      { "word": "girafa", "emoji": "🦒" },
+      { "word": "cenoura", "emoji": "🥕" },
+      { "word": "foguete", "emoji": "🚀" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "foguete", "emoji": "🚀" },
+    "correct": { "word": "tapete", "emoji": "🧶" },
+    "distractors": [
+      { "word": "girafa", "emoji": "🦒" },
+      { "word": "panela", "emoji": "🍲" },
+      { "word": "abacaxi", "emoji": "🍍" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "montanha", "emoji": "🏔️" },
+    "correct": { "word": "aranha", "emoji": "🕷️" },
+    "distractors": [
+      { "word": "sorvete", "emoji": "🍦" },
+      { "word": "foguete", "emoji": "🚀" },
+      { "word": "abacate", "emoji": "🥑" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "girafa", "emoji": "🦒" },
+    "correct": { "word": "garrafa", "emoji": "🍶" },
+    "distractors": [
+      { "word": "elefante", "emoji": "🐘" },
+      { "word": "pirulito", "emoji": "🍭" },
+      { "word": "tomate", "emoji": "🍅" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "abacaxi", "emoji": "🍍" },
+    "correct": { "word": "táxi", "emoji": "🚕" },
+    "distractors": [
+      { "word": "cenoura", "emoji": "🥕" },
+      { "word": "sorvete", "emoji": "🍦" },
+      { "word": "cachorro", "emoji": "🐕" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "bolacha", "emoji": "🍪" },
+    "correct": { "word": "borracha", "emoji": "🧹" },
+    "distractors": [
+      { "word": "tomate", "emoji": "🍅" },
+      { "word": "elefante", "emoji": "🐘" },
+      { "word": "foguete", "emoji": "🚀" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "sorvete", "emoji": "🍦" },
+    "correct": { "word": "foguete", "emoji": "🚀" },
+    "distractors": [
+      { "word": "girafa", "emoji": "🦒" },
+      { "word": "abacate", "emoji": "🥑" },
+      { "word": "pirulito", "emoji": "🍭" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "macaco", "emoji": "🐒" },
+    "correct": { "word": "buraco", "emoji": "🕳️" },
+    "distractors": [
+      { "word": "tomate", "emoji": "🍅" },
+      { "word": "pirulito", "emoji": "🍭" },
+      { "word": "abacaxi", "emoji": "🍍" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "torneira", "emoji": "🚰" },
+    "correct": { "word": "madeira", "emoji": "🪵" },
+    "distractors": [
+      { "word": "girafa", "emoji": "🦒" },
+      { "word": "chocolate", "emoji": "🍫" },
+      { "word": "abacate", "emoji": "🥑" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "panela", "emoji": "🍲" },
+    "correct": { "word": "canela", "emoji": "🫚" },
+    "distractors": [
+      { "word": "capela", "emoji": "⛪" },
+      { "word": "cabana", "emoji": "🏕️" },
+      { "word": "camelo", "emoji": "🐪" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "pintura", "emoji": "🖼️" },
+    "correct": { "word": "aventura", "emoji": "🗺️" },
+    "distractors": [
+      { "word": "cintura", "emoji": "💃" },
+      { "word": "cultura", "emoji": "📚" },
+      { "word": "guitarra", "emoji": "🎸" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "fogueira", "emoji": "🔥" },
+    "correct": { "word": "brincadeira", "emoji": "🎠" },
+    "distractors": [
+      { "word": "figueira", "emoji": "🌳" },
+      { "word": "fronteira", "emoji": "🗺️" },
+      { "word": "palmeira", "emoji": "🌴" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "colar", "emoji": "📿" },
+    "correct": { "word": "falar", "emoji": "🗣️" },
+    "distractors": [
+      { "word": "solar", "emoji": "☀️" },
+      { "word": "pilar", "emoji": "🏛️" },
+      { "word": "polir", "emoji": "✨" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "escova", "emoji": "🪥" },
+    "correct": { "word": "nova", "emoji": "✨" },
+    "distractors": [
+      { "word": "prova", "emoji": "📝" },
+      { "word": "cova", "emoji": "🕳️" },
+      { "word": "nobre", "emoji": "🎩" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "dragão", "emoji": "🐉" },
+    "correct": { "word": "coração", "emoji": "❤️" },
+    "distractors": [
+      { "word": "balão", "emoji": "🎈" },
+      { "word": "trovão", "emoji": "⛈️" },
+      { "word": "dragoa", "emoji": "🦎" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "mochila", "emoji": "🎒" },
+    "correct": { "word": "fila", "emoji": "🧍" },
+    "distractors": [
+      { "word": "tranquila", "emoji": "😌" },
+      { "word": "gorila", "emoji": "🦍" },
+      { "word": "motoca", "emoji": "🏍️" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "caverna", "emoji": "🕳️" },
+    "correct": { "word": "moderna", "emoji": "🏙️" },
+    "distractors": [
+      { "word": "lanterna", "emoji": "🔦" },
+      { "word": "taberna", "emoji": "🍺" },
+      { "word": "governo", "emoji": "🏛️" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "planeta", "emoji": "🌍" },
+    "correct": { "word": "bicicleta", "emoji": "🚲" },
+    "distractors": [
+      { "word": "corneta", "emoji": "📯" },
+      { "word": "caneta", "emoji": "🖊️" },
+      { "word": "cometa", "emoji": "☄️" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "tesouro", "emoji": "💎" },
+    "correct": { "word": "besouro", "emoji": "🪲" },
+    "distractors": [
+      { "word": "dinossauro", "emoji": "🦕" },
+      { "word": "restauro", "emoji": "🏗️" },
+      { "word": "centauro", "emoji": "🐎" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "cortina", "emoji": "🪟" },
+    "correct": { "word": "vitamina", "emoji": "💊" },
+    "distractors": [
+      { "word": "cozinha", "emoji": "🍳" },
+      { "word": "galinha", "emoji": "🐔" },
+      { "word": "colina", "emoji": "⛰️" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "floresta", "emoji": "🌲" },
+    "correct": { "word": "tempesta", "emoji": "⛈️" },
+    "distractors": [
+      { "word": "orquestra", "emoji": "🎼" },
+      { "word": "modesta", "emoji": "😊" },
+      { "word": "palmeira", "emoji": "🌴" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "sapato", "emoji": "👟" },
+    "correct": { "word": "retrato", "emoji": "🖼️" },
+    "distractors": [
+      { "word": "barato", "emoji": "💰" },
+      { "word": "contato", "emoji": "📱" },
+      { "word": "jardim", "emoji": "🌷" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "violino", "emoji": "🎻" },
+    "correct": { "word": "destino", "emoji": "🔮" },
+    "distractors": [
+      { "word": "pepino", "emoji": "🥒" },
+      { "word": "casino", "emoji": "🎰" },
+      { "word": "palhaço", "emoji": "🤡" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "chapéu", "emoji": "🎩" },
+    "correct": { "word": "troféu", "emoji": "🏆" },
+    "distractors": [
+      { "word": "sandeu", "emoji": "😜" },
+      { "word": "museu", "emoji": "🏛️" },
+      { "word": "cabelo", "emoji": "💇" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "caminho", "emoji": "🛤️" },
+    "correct": { "word": "carinho", "emoji": "🤗" },
+    "distractors": [
+      { "word": "ninho", "emoji": "🪹" },
+      { "word": "vinho", "emoji": "🍷" },
+      { "word": "folheto", "emoji": "📰" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "balcão", "emoji": "🏪" },
+    "correct": { "word": "vulcão", "emoji": "🌋" },
+    "distractors": [
+      { "word": "falcão", "emoji": "🦅" },
+      { "word": "rascão", "emoji": "🐟" },
+      { "word": "palmito", "emoji": "🌴" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "serpente", "emoji": "🐍" },
+    "correct": { "word": "dente", "emoji": "🦷" },
+    "distractors": [
+      { "word": "parente", "emoji": "👨‍👩‍👦" },
+      { "word": "corrente", "emoji": "⛓️" },
+      { "word": "castelo", "emoji": "🏰" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "pirâmide", "emoji": "🔺" },
+    "correct": { "word": "ride", "emoji": "😂" },
+    "distractors": [
+      { "word": "saúde", "emoji": "🏥" },
+      { "word": "itude", "emoji": "📐" },
+      { "word": "verdade", "emoji": "✅" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "raquete", "emoji": "🏸" },
+    "correct": { "word": "mosquete", "emoji": "🔫" },
+    "distractors": [
+      { "word": "banquete", "emoji": "🍽️" },
+      { "word": "biscoite", "emoji": "🍪" },
+      { "word": "violeta", "emoji": "🟣" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "elefante", "emoji": "🐘" },
+    "correct": { "word": "diamante", "emoji": "💎" },
+    "distractors": [
+      { "word": "gigante", "emoji": "🗿" },
+      { "word": "instante", "emoji": "⏱️" },
+      { "word": "cenoura", "emoji": "🥕" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "abóbora", "emoji": "🎃" },
+    "correct": { "word": "âncora", "emoji": "⚓" },
+    "distractors": [
+      { "word": "pólvora", "emoji": "💥" },
+      { "word": "cântara", "emoji": "🏺" },
+      { "word": "formiga", "emoji": "🐜" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "palhaço", "emoji": "🤡" },
+    "correct": { "word": "pedaço", "emoji": "🧩" },
+    "distractors": [
+      { "word": "cansaço", "emoji": "😴" },
+      { "word": "abraço", "emoji": "🤗" },
+      { "word": "esperto", "emoji": "🧠" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "medalha", "emoji": "🏅" },
+    "correct": { "word": "toalha", "emoji": "🛁" },
+    "distractors": [
+      { "word": "batalha", "emoji": "⚔️" },
+      { "word": "muralha", "emoji": "🧱" },
+      { "word": "cadeira", "emoji": "🪑" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "vassoura", "emoji": "🧹" },
+    "correct": { "word": "tesoura", "emoji": "✂️" },
+    "distractors": [
+      { "word": "lavoura", "emoji": "🌾" },
+      { "word": "amargura", "emoji": "😢" },
+      { "word": "cadeira", "emoji": "🪑" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "castanha", "emoji": "🌰" },
+    "correct": { "word": "montanha", "emoji": "🏔️" },
+    "distractors": [
+      { "word": "aranha", "emoji": "🕷️" },
+      { "word": "campanha", "emoji": "📢" },
+      { "word": "cenoura", "emoji": "🥕" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "tigela", "emoji": "🥣" },
+    "correct": { "word": "aquarela", "emoji": "🎨" },
+    "distractors": [
+      { "word": "gazela", "emoji": "🦌" },
+      { "word": "novela", "emoji": "📺" },
+      { "word": "formiga", "emoji": "🐜" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "joaninha", "emoji": "🐞" },
+    "correct": { "word": "rainha", "emoji": "👸" },
+    "distractors": [
+      { "word": "vizinha", "emoji": "🏘️" },
+      { "word": "farinha", "emoji": "🌾" },
+      { "word": "castelo", "emoji": "🏰" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "tambor", "emoji": "🥁" },
+    "correct": { "word": "calor", "emoji": "🌡️" },
+    "distractors": [
+      { "word": "vapor", "emoji": "♨️" },
+      { "word": "redor", "emoji": "🔄" },
+      { "word": "cadeira", "emoji": "🪑" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "boneco", "emoji": "🧸" },
+    "correct": { "word": "eco", "emoji": "🗣️" },
+    "distractors": [
+      { "word": "seco", "emoji": "🏜️" },
+      { "word": "grego", "emoji": "🇬🇷" },
+      { "word": "formiga", "emoji": "🐜" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "target": { "word": "chocolate", "emoji": "🍫" },
+    "correct": { "word": "abacate", "emoji": "🥑" },
+    "distractors": [
+      { "word": "tomate", "emoji": "🍅" },
+      { "word": "combate", "emoji": "⚔️" },
+      { "word": "pirulito", "emoji": "🍭" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "tartaruga", "emoji": "🐢" },
+    "correct": { "word": "ruga", "emoji": "👴" },
+    "distractors": [
+      { "word": "alface", "emoji": "🥬" },
+      { "word": "cenoura", "emoji": "🥕" },
+      { "word": "cachorro", "emoji": "🐕" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "lanterna", "emoji": "🔦" },
+    "correct": { "word": "caverna", "emoji": "🕳️" },
+    "distractors": [
+      { "word": "sorvete", "emoji": "🍦" },
+      { "word": "pirulito", "emoji": "🍭" },
+      { "word": "abacaxi", "emoji": "🍍" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "morcego", "emoji": "🦇" },
+    "correct": { "word": "sossego", "emoji": "😌" },
+    "distractors": [
+      { "word": "tomate", "emoji": "🍅" },
+      { "word": "cenoura", "emoji": "🥕" },
+      { "word": "cachorro", "emoji": "🐕" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "pinguim", "emoji": "🐧" },
+    "correct": { "word": "jardim", "emoji": "🌷" },
+    "distractors": [
+      { "word": "girafa", "emoji": "🦒" },
+      { "word": "pirulito", "emoji": "🍭" },
+      { "word": "cenoura", "emoji": "🥕" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "pantera", "emoji": "🐆" },
+    "correct": { "word": "banheira", "emoji": "🛁" },
+    "distractors": [
+      { "word": "foguete", "emoji": "🚀" },
+      { "word": "abacate", "emoji": "🥑" },
+      { "word": "pirulito", "emoji": "🍭" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "vampiro", "emoji": "🧛" },
+    "correct": { "word": "suspiro", "emoji": "😮‍💨" },
+    "distractors": [
+      { "word": "foguete", "emoji": "🚀" },
+      { "word": "sorvete", "emoji": "🍦" },
+      { "word": "pirulito", "emoji": "🍭" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "camiseta", "emoji": "👕" },
+    "correct": { "word": "caneta", "emoji": "🖊️" },
+    "distractors": [
+      { "word": "girafa", "emoji": "🦒" },
+      { "word": "tomate", "emoji": "🍅" },
+      { "word": "cachorro", "emoji": "🐕" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "jiboia", "emoji": "🐍" },
+    "correct": { "word": "boia", "emoji": "🛟" },
+    "distractors": [
+      { "word": "cenoura", "emoji": "🥕" },
+      { "word": "sorvete", "emoji": "🍦" },
+      { "word": "elefante", "emoji": "🐘" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "target": { "word": "pirulito", "emoji": "🍭" },
+    "correct": { "word": "bonito", "emoji": "😍" },
+    "distractors": [
+      { "word": "girafa", "emoji": "🦒" },
+      { "word": "cenoura", "emoji": "🥕" },
+      { "word": "foguete", "emoji": "🚀" }
+    ],
+    "difficulty": "medium"
+  }
+]
