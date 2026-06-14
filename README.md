@@ -49,7 +49,7 @@ Novos jogos são adicionados implementando a interface `GamePlugin` e registrand
 
 ## Pré-requisitos
 
-- **Node.js** ≥ 20
+- **Node.js** ≥ 24
 - **npm** (incluído com o Node.js)
 
 ## Início rápido
